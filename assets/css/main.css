@@ -990,6 +990,7 @@ section,
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .about .content p {
@@ -2633,3 +2634,1675 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+
+/* ==================================================
+   PAWLIDAYS
+   Warm Brown Design
+   Custom stylesheet for Presento Bootstrap 5
+   ================================================== */
+
+
+/* 1. COLOURS AND TYPOGRAPHY
+   -------------------------------------------------- */
+
+:root {
+  --paw-ivory: #F4F0E6;
+  --paw-sage: #879078;
+  --paw-olive: #343C32;
+  --paw-tan: #C99D76;
+  --paw-brown: #765642;
+  --paw-coffee: #594030;
+  --paw-white: #FFFFFF;
+
+  --default-font: "DM Sans", Arial, sans-serif;
+  --heading-font: "Fraunces", Georgia, serif;
+  --nav-font: "DM Sans", Arial, sans-serif;
+
+  --background-color: #F4F0E6;
+  --default-color: #343C32;
+  --heading-color: #343C32;
+  --accent-color: #765642;
+  --surface-color: #FFFFFF;
+  --contrast-color: #FFFFFF;
+
+  --nav-color: #343C32;
+  --nav-hover-color: #765642;
+  --nav-mobile-background-color: #FFFFFF;
+  --nav-dropdown-background-color: #FFFFFF;
+  --nav-dropdown-color: #343C32;
+  --nav-dropdown-hover-color: #765642;
+}
+
+
+/* 2. GENERAL STYLES
+   -------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background-color: var(--paw-ivory);
+  color: var(--paw-olive);
+  font-family: var(--default-font);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+p {
+  line-height: 1.75;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  transition: color 0.25s ease;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--paw-brown);
+  outline-offset: 3px;
+}
+
+
+/* 3. BACKGROUND THEMES
+   -------------------------------------------------- */
+
+.light-background {
+  --background-color: #F4F0E6;
+  --default-color: #343C32;
+  --heading-color: #343C32;
+  --surface-color: #FFFFFF;
+}
+
+.dark-background {
+  --background-color: #343C32;
+  --default-color: #F4F0E6;
+  --heading-color: #FFFFFF;
+  --surface-color: #594030;
+  --contrast-color: #FFFFFF;
+}
+
+
+/* 4. HEADER AND NAVIGATION
+   -------------------------------------------------- */
+
+.header {
+  background-color: var(--paw-ivory);
+  box-shadow: 0 5px 25px rgba(52, 60, 50, 0.07);
+}
+
+.header .logo .sitename {
+  color: var(--paw-olive);
+  font-family: var(--heading-font);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.navmenu a {
+  font-family: var(--nav-font);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navmenu a:hover,
+.navmenu .active {
+  color: var(--paw-brown);
+}
+
+.header .btn-getstarted {
+  background-color: var(--paw-brown);
+  color: var(--paw-white);
+  border-radius: 50px;
+  padding: 12px 26px;
+  font-weight: 700;
+}
+
+.header .btn-getstarted:hover {
+  background-color: var(--paw-coffee);
+  color: var(--paw-white);
+}
+
+
+/* 5. HERO SECTION
+   -------------------------------------------------- */
+
+.hero {
+  background-color: var(--paw-ivory);
+  min-height: 650px;
+  padding: 110px 0;
+  overflow: hidden;
+}
+
+.hero h2 {
+  color: var(--paw-olive);
+  font-family: var(--heading-font);
+  font-size: clamp(46px, 5.5vw, 82px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  max-width: 700px;
+}
+
+.hero p {
+  color: var(--paw-coffee);
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 550px;
+  margin-top: 22px;
+}
+
+.hero .btn-get-started {
+  display: inline-block;
+  background-color: var(--paw-brown);
+  color: var(--paw-white);
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.hero .btn-get-started:hover {
+  background-color: var(--paw-coffee);
+  color: var(--paw-white);
+}
+
+.hero .btn-watch-video,
+.hero .btn-watch-video span,
+.hero .btn-watch-video i {
+  color: var(--paw-olive);
+}
+
+.hero .btn-watch-video:hover span {
+  color: var(--paw-brown);
+}
+
+
+/* 6. SECTION TITLES AND SPACING
+   -------------------------------------------------- */
+
+section.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-title {
+  padding-bottom: 48px;
+}
+
+.section-title h2 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: clamp(34px, 4vw, 54px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: none;
+}
+
+.section-title h2::after {
+  background-color: var(--paw-tan);
+}
+
+.section-title p {
+  max-width: 720px;
+  margin: 18px auto 0;
+}
+
+
+/* 7. ABOUT SECTION
+   -------------------------------------------------- */
+
+.about {
+  background-color: var(--paw-olive);
+  color: var(--paw-ivory);
+}
+
+.about h3,
+.about h4,
+.about .content h3,
+.about .icon-box h4,
+.about .icon-box h4 a {
+  color: var(--paw-white);
+}
+
+.about .content p,
+.about .icon-box p {
+  color: var(--paw-ivory);
+}
+
+.about .content h3 {
+  font-size: clamp(32px, 3.5vw, 50px);
+}
+
+.about .icon-box {
+  padding: 15px;
+}
+
+.about .icon-box i {
+  color: var(--paw-tan);
+}
+
+.about .content .about-btn {
+  border-color: var(--paw-tan);
+  color: var(--paw-white);
+}
+
+.about .content .about-btn:hover {
+  background-color: var(--paw-tan);
+  color: var(--paw-olive);
+}
+
+
+/* 8. STATISTICS
+   -------------------------------------------------- */
+
+.stats {
+  background-color: var(--paw-white);
+}
+
+.stats .stats-item {
+  background-color: var(--paw-ivory);
+  border-radius: 22px;
+  padding: 30px 20px;
+  box-shadow: none;
+}
+
+.stats .stats-item span,
+.stats .stats-item p,
+.stats i {
+  color: var(--paw-olive);
+}
+
+
+/* 9. TABS
+   -------------------------------------------------- */
+
+.tabs {
+  background-color: var(--paw-white);
+}
+
+.tabs .nav-link {
+  border: 1px solid #D8D7CD;
+  border-radius: 16px;
+  transition: border-color 0.25s ease;
+}
+
+.tabs .nav-link:hover {
+  border-color: var(--paw-brown);
+}
+
+.tabs .nav-link.active {
+  background-color: var(--paw-sage);
+  border-color: var(--paw-sage);
+}
+
+.tabs .nav-link.active h4,
+.tabs .nav-link.active i {
+  color: var(--paw-olive);
+}
+
+.tabs .tab-content img {
+  border-radius: 24px;
+}
+
+
+/* 10. SERVICES
+   -------------------------------------------------- */
+
+.services {
+  background-color: var(--paw-coffee);
+}
+
+.services .section-title h2,
+.services .section-title p {
+  color: var(--paw-white);
+}
+
+.services .service-item {
+  background-color: var(--paw-ivory);
+  border: none;
+  border-radius: 22px;
+  padding: 36px;
+  min-height: 190px;
+  box-shadow: none;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.services .service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16);
+}
+
+.services .service-item .title,
+.services .service-item .title a,
+.services .service-item .description {
+  color: var(--paw-olive);
+}
+
+.services .service-item .icon {
+  color: var(--paw-brown);
+}
+
+.services .service-item .title {
+  font-size: 25px;
+}
+
+
+/* 11. PORTFOLIO AND GALLERY
+   -------------------------------------------------- */
+
+.portfolio {
+  background-color: var(--paw-ivory);
+}
+
+.portfolio .portfolio-content {
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-content img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+}
+
+.portfolio .portfolio-info {
+  background-color: var(--paw-white);
+}
+
+.portfolio .portfolio-filters li {
+  font-weight: 600;
+}
+
+.portfolio .portfolio-filters li.filter-active {
+  color: var(--paw-brown);
+}
+
+
+/* 12. TESTIMONIALS
+   -------------------------------------------------- */
+
+.testimonials {
+  background-color: var(--paw-sage);
+}
+
+.testimonials .section-title h2,
+.testimonials .section-title p {
+  color: var(--paw-olive);
+}
+
+.testimonials .testimonial-item {
+  background-color: var(--paw-white);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 12px 35px rgba(52, 60, 50, 0.09);
+}
+
+.testimonials .testimonial-item h3,
+.testimonials .testimonial-item h4,
+.testimonials .testimonial-item p {
+  color: var(--paw-olive);
+}
+
+
+/* 13. FAQ
+   -------------------------------------------------- */
+
+.faq {
+  background-color: var(--paw-ivory);
+}
+
+.faq .faq-container .faq-item {
+  background-color: var(--paw-white);
+  border-radius: 16px;
+  padding: 22px 25px;
+  margin-bottom: 14px;
+}
+
+.faq .faq-container .faq-item.faq-active {
+  background-color: var(--paw-sage);
+}
+
+.faq .faq-container .faq-item.faq-active h3,
+.faq .faq-container .faq-item.faq-active p {
+  color: var(--paw-olive);
+}
+
+
+/* 14. CONTACT
+   -------------------------------------------------- */
+
+.contact {
+  background-color: var(--paw-white);
+}
+
+.contact .info-item,
+.contact .php-email-form {
+  background-color: var(--paw-ivory);
+  border-radius: 20px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background-color: var(--paw-brown);
+  color: var(--paw-white);
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background-color: var(--paw-coffee);
+}
+
+
+/* 15. FOOTER
+   -------------------------------------------------- */
+
+.footer {
+  background-color: var(--paw-olive);
+  color: var(--paw-ivory);
+}
+
+.footer h3,
+.footer h4,
+.footer p,
+.footer .sitename {
+  color: var(--paw-ivory);
+}
+
+.footer a {
+  color: var(--paw-ivory);
+}
+
+.footer a:hover {
+  color: var(--paw-tan);
+}
+
+
+/* 16. INNER PAGE HERO
+   -------------------------------------------------- */
+
+.paw-page-hero {
+  padding: 115px 0 100px;
+  background-color: var(--paw-olive);
+  color: var(--paw-white);
+  overflow: hidden;
+}
+
+.paw-page-hero h1 {
+  color: var(--paw-white);
+  font-size: clamp(46px, 6vw, 86px);
+  line-height: 1.05;
+  max-width: 780px;
+}
+
+.paw-page-hero p {
+  color: var(--paw-ivory);
+  font-size: 19px;
+  max-width: 630px;
+}
+
+.paw-page-hero img {
+  width: 100%;
+  max-height: 370px;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+.eyebrow {
+  font-family: var(--default-font);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+
+/* 17. INNER PAGE SECTIONS
+   -------------------------------------------------- */
+
+.paw-section {
+  padding: 100px 0;
+}
+
+.paw-section h2 {
+  font-size: clamp(34px, 4vw, 58px);
+}
+
+.paw-section--cream {
+  background-color: var(--paw-ivory);
+}
+
+.paw-section--white {
+  background-color: var(--paw-white);
+}
+
+.paw-section--blue {
+  background-color: var(--paw-sage);
+}
+
+.paw-section--burgundy {
+  background-color: var(--paw-coffee);
+  color: var(--paw-white);
+}
+
+.paw-section--burgundy h2,
+.paw-section--burgundy h3,
+.paw-section--burgundy p {
+  color: var(--paw-white);
+}
+
+
+/* 18. CARDS
+   -------------------------------------------------- */
+
+.paw-card {
+  height: 100%;
+  background-color: var(--paw-white);
+  border: 1px solid rgba(52, 60, 50, 0.12);
+  border-radius: 24px;
+  padding: 36px;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.paw-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(52, 60, 50, 0.10);
+}
+
+.paw-card h3 {
+  color: var(--paw-olive);
+  font-size: 28px;
+}
+
+.paw-card p {
+  color: var(--paw-coffee);
+}
+
+.paw-card .bi {
+  font-size: 34px;
+  color: var(--paw-brown);
+}
+
+
+/* 19. IMAGES
+   -------------------------------------------------- */
+
+.paw-photo,
+.paw-split-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+
+/* 20. BUTTONS
+   -------------------------------------------------- */
+
+.paw-primary {
+  display: inline-block;
+  background-color: var(--paw-brown);
+  color: var(--paw-white);
+  padding: 14px 28px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.25s ease,
+              transform 0.25s ease;
+}
+
+.paw-primary:hover {
+  background-color: var(--paw-coffee);
+  color: var(--paw-white);
+  transform: translateY(-2px);
+}
+
+.paw-inverse {
+  background-color: var(--paw-ivory);
+  color: var(--paw-olive);
+}
+
+.paw-inverse:hover {
+  background-color: var(--paw-tan);
+  color: var(--paw-olive);
+}
+
+.paw-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--paw-brown);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.paw-link:hover {
+  color: var(--paw-coffee);
+}
+
+
+/* 21. FORMS
+   -------------------------------------------------- */
+
+.paw-form {
+  background-color: var(--paw-white);
+  padding: 40px;
+  border-radius: 26px;
+  box-shadow: 0 18px 50px rgba(52, 60, 50, 0.08);
+}
+
+.paw-form label {
+  color: var(--paw-olive);
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.paw-form .form-control,
+.paw-form .form-select {
+  border: 1px solid #A9AB9D;
+  border-radius: 12px;
+  padding: 13px 16px;
+  background-color: var(--paw-white);
+  color: var(--paw-olive);
+}
+
+.paw-form .form-control:focus,
+.paw-form .form-select:focus {
+  border-color: var(--paw-brown);
+  box-shadow: 0 0 0 3px rgba(118, 86, 66, 0.15);
+}
+
+
+/* 22. BLOG
+   -------------------------------------------------- */
+
+.paw-blog-card {
+  background-color: var(--paw-white);
+  border-radius: 24px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.paw-blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.paw-blog-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.paw-blog-card .content {
+  padding: 30px;
+}
+
+.paw-blog-card h3 {
+  color: var(--paw-olive);
+  font-size: 27px;
+}
+
+.paw-blog-card p {
+  color: var(--paw-coffee);
+}
+
+
+/* 23. PAWLIDAYS REVIEWS
+   -------------------------------------------------- */
+
+.paw-reviews {
+  background-color: var(--paw-sage);
+  color: var(--paw-olive);
+}
+
+.paw-reviews h2 {
+  color: var(--paw-olive);
+}
+
+.paw-review-card {
+  background-color: var(--paw-white);
+  border-radius: 26px;
+  padding: 40px;
+  height: 100%;
+}
+
+.paw-review-card p {
+  color: var(--paw-olive);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* 24. TABLET RESPONSIVE
+   -------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+  section.section,
+  .paw-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero h2 {
+    font-size: clamp(44px, 6vw, 64px);
+  }
+
+  .header .logo .sitename {
+    font-size: 28px;
+  }
+
+  .paw-page-hero {
+    padding: 85px 0;
+  }
+
+}
+
+
+/* 25. MOBILE RESPONSIVE
+   -------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+  section.section,
+  .paw-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 85px 0;
+  }
+
+  .hero h2 {
+    font-size: clamp(39px, 10vw, 52px);
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  .paw-card,
+  .paw-review-card {
+    padding: 25px;
+  }
+
+  .paw-form {
+    padding: 24px;
+  }
+
+  .paw-photo,
+  .paw-split-image {
+    height: 290px;
+  }
+
+  .portfolio .portfolio-content img {
+    height: 250px;
+  }
+
+}
+
+
+/* 26. ACCESSIBILITY
+   -------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .paw-card,
+  .paw-primary,
+  .paw-blog-card,
+  .services .service-item {
+    transition: none;
+  }
+}
+
+/* PAWLIDAYS — HEADER & HERO FIX */
+
+#header.paw-header {
+  background: #FAF8F3;
+  padding: 18px 0;
+  border-bottom: 1px solid #e8e3d9;
+  box-shadow: none;
+}
+
+#header.paw-header .container-xl {
+  gap: 28px;
+}
+
+#header .paw-brand {
+  font-family: "DM Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  color: #765642;
+}
+
+#header .paw-brand-dot {
+  color: #C99D76;
+}
+
+#header.paw-header .navmenu {
+  margin-right: 18px;
+}
+
+@media (min-width: 1200px) {
+  #header.paw-header .navmenu ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  #header.paw-header .navmenu a {
+    padding: 8px 0;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+#header .paw-nav-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 22px;
+  border-radius: 40px;
+  background: #343C32;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+#header .paw-nav-button:hover {
+  background: #765642;
+  color: #fff;
+}
+
+/* HERO */
+
+#hero.paw-hero {
+  background: #F4F0E6;
+  min-height: auto;
+  padding: 110px 0 120px;
+  overflow: hidden;
+}
+
+#hero.paw-hero .paw-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #765642;
+}
+
+#hero.paw-hero .paw-eyebrow-line {
+  width: 30px;
+  height: 1px;
+  background: #765642;
+}
+
+#hero.paw-hero h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(52px, 5.4vw, 82px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -2.5px;
+  color: #343C32;
+  margin-bottom: 28px;
+}
+
+#hero.paw-hero h1 em {
+  color: #765642;
+  font-weight: 400;
+}
+
+#hero.paw-hero .paw-hero-description {
+  max-width: 490px;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #594030;
+  margin-bottom: 32px;
+}
+
+#hero.paw-hero .paw-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+#hero.paw-hero .paw-primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: #343C32;
+  color: #fff;
+  border-radius: 50px;
+  padding: 16px 26px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#hero.paw-hero .paw-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #343C32;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #879078;
+  padding-bottom: 5px;
+}
+
+#hero.paw-hero .paw-hero-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 48px;
+  color: #765642;
+  font-size: 12px;
+}
+
+#hero.paw-hero .paw-hero-image-wrap {
+  position: relative;
+  max-width: 540px;
+  margin-left: auto;
+}
+
+#hero.paw-hero .paw-hero-image {
+  display: block;
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  border-radius: 260px 260px 24px 24px;
+}
+
+#hero.paw-hero .paw-hero-sticker {
+  position: absolute;
+  left: -30px;
+  bottom: 65px;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: #C99D76;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #343C32;
+  transform: rotate(-12deg);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+#hero.paw-hero .paw-hero-caption {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+  background: #FAF8F3;
+  border-radius: 30px;
+  padding: 13px 18px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #343C32;
+}
+
+@media (max-width: 991px) {
+  #hero.paw-hero {
+    padding: 70px 0;
+  }
+
+  #hero.paw-hero .paw-hero-image {
+    height: 450px;
+  }
+
+  #hero.paw-hero .paw-hero-sticker {
+    left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  #header .paw-brand {
+    font-size: 26px;
+  }
+
+  #header .paw-nav-button {
+    padding: 10px 13px;
+    font-size: 11px;
+  }
+
+  #hero.paw-hero h1 {
+    font-size: 46px;
+  }
+
+  #hero.paw-hero .paw-hero-image {
+    height: 370px;
+  }
+
+  #hero.paw-hero .paw-hero-sticker {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* PAWLIDAYS — TEAM PHOTOS */
+
+#team .team-member .member-img {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+#team .team-member .member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+/* PAWLIDAYS ABOUT ICONS */
+
+#about .icon-box i {
+  color: #C99D76 !important;
+  font-size: 34px;
+  line-height: 1;
+  display: inline-block;
+  margin-bottom: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#about .icon-box:hover i {
+  transform: translateY(-4px);
+  color: #E0B894 !important;
+}
+
+#about .icon-box h4,
+#about .icon-box h4 a {
+  color: #FAF8F3;
+}
+
+#about .icon-box:hover h4,
+#about .icon-box:hover h4 a {
+  color: #FAF8F3;
+}
+
+
+/* ====================================
+   PAWLIDAYS — SERVICES REDESIGN
+   ==================================== */
+
+#services.paw-services {
+  background: #343C32;
+  padding: 110px 0;
+  position: relative;
+}
+
+/* Heading */
+
+.paw-services-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 65px;
+}
+
+.paw-services-eyebrow {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #C99D76;
+  margin-bottom: 20px;
+}
+
+#services .paw-services-heading h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(42px, 5vw, 66px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+  color: #FAF8F3;
+  margin-bottom: 24px;
+}
+
+#services .paw-services-heading h2 em {
+  color: #C99D76;
+  font-weight: 400;
+}
+
+.paw-services-heading p {
+  color: #E6E5DD;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Service cards */
+
+#services .paw-service-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 310px;
+  padding: 38px 42px;
+  background: #F4F0E6;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #343C32;
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+#services .paw-service-box:hover {
+  background: #FAF8F3;
+  transform: translateY(-7px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
+}
+
+.paw-service-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.paw-service-top > i {
+  font-size: 35px;
+  line-height: 1;
+  color: #765642;
+}
+
+.paw-service-top span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #879078;
+}
+
+#services .paw-service-box h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  color: #343C32;
+  margin-bottom: 16px;
+}
+
+#services .paw-service-box p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #594F46;
+  max-width: 430px;
+  margin-bottom: 30px;
+}
+
+.paw-service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(52, 60, 50, 0.15);
+}
+
+.paw-service-bottom span {
+  font-size: 13px;
+  font-weight: 700;
+  color: #765642;
+}
+
+.paw-service-bottom i {
+  font-size: 21px;
+  color: #765642;
+  transition: transform 0.3s ease;
+}
+
+.paw-service-box:hover .paw-service-bottom i {
+  transform: translate(4px, -4px);
+}
+
+/* Bottom call to action */
+
+.paw-services-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-top: 65px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.paw-services-footer span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #C99D76;
+}
+
+#services .paw-services-footer h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 28px;
+  color: #FAF8F3;
+  margin: 12px 0 0;
+}
+
+.paw-services-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 15px 26px;
+  background: #C99D76;
+  color: #343C32;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background 0.3s ease,
+              transform 0.3s ease;
+}
+
+.paw-services-cta:hover {
+  background: #E2B58F;
+  color: #343C32;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  #services.paw-services {
+    padding: 75px 0;
+  }
+
+  .paw-services-heading {
+    margin-bottom: 40px;
+  }
+
+  #services .paw-service-box {
+    padding: 28px;
+    min-height: 280px;
+  }
+
+  #services .paw-service-box h3 {
+    font-size: 26px;
+  }
+
+  .paw-services-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ==================================
+   PAWLIDAYS — INSIDE SECTION
+   ================================== */
+
+#inside-pawlidays {
+  background: #F4F0E6;
+  padding: 110px 0;
+  overflow: hidden;
+}
+
+.paw-inside-label,
+.paw-inside-small {
+  display: block;
+  color: #765642;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#inside-pawlidays h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(40px, 4.5vw, 64px);
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 1.13;
+  color: #343C32;
+  max-width: 720px;
+  margin: 0;
+}
+
+#inside-pawlidays h2 em,
+#inside-pawlidays h3 em {
+  color: #765642;
+  font-weight: 400;
+}
+
+.paw-inside-intro {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #594F46;
+  margin-bottom: 0;
+}
+
+.paw-inside-image {
+  position: relative;
+}
+
+.paw-inside-image img {
+  display: block;
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.paw-inside-sticker {
+  position: absolute;
+  right: -20px;
+  bottom: -25px;
+  width: 145px;
+  height: 145px;
+  background: #879078;
+  border: 7px solid #F4F0E6;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transform: rotate(10deg);
+}
+
+.paw-inside-sticker span {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 17px;
+  letter-spacing: 0;
+  margin-top: 5px;
+}
+
+.paw-inside-content {
+  padding-left: 15px;
+}
+
+#inside-pawlidays h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(32px, 3vw, 45px);
+  font-weight: 500;
+  color: #343C32;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.paw-inside-content p {
+  color: #594F46;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.paw-inside-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #765642;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #765642;
+  padding-bottom: 8px;
+  margin-top: 15px;
+}
+
+.paw-inside-link:hover {
+  color: #343C32;
+}
+
+/* Values row */
+
+.paw-inside-values {
+  margin-top: 80px;
+}
+
+.paw-inside-value {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: #FAF8F3;
+  padding: 30px;
+  border-radius: 18px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.paw-inside-value:hover {
+  transform: translateY(-5px);
+}
+
+.paw-inside-value > i {
+  font-size: 27px;
+  color: #765642;
+  flex-shrink: 0;
+}
+
+#inside-pawlidays .paw-inside-value h4 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 21px;
+  color: #343C32;
+  margin-bottom: 10px;
+}
+
+.paw-inside-value p {
+  font-size: 13px;
+  color: #594F46;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  #inside-pawlidays {
+    padding: 75px 0;
+  }
+
+  .paw-inside-image img {
+    height: 430px;
+  }
+
+  .paw-inside-content {
+    padding-left: 0;
+  }
+
+  .paw-inside-values {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 575px) {
+  #inside-pawlidays {
+    padding: 60px 0;
+  }
+
+  .paw-inside-image img {
+    height: 320px;
+  }
+
+  .paw-inside-sticker {
+    width: 110px;
+    height: 110px;
+    right: 0;
+    bottom: -15px;
+    font-size: 9px;
+  }
+
+  .paw-inside-sticker span {
+    font-size: 13px;
+  }
+
+  .paw-inside-values {
+    margin-top: 45px;
+  }
+}
+/* ======================================
+   PAWLIDAYS — GLOBAL TYPOGRAPHY
+   ====================================== */
+
+:root {
+  --default-font: "DM Sans", sans-serif;
+  --heading-font: "Fraunces", Georgia, serif;
+  --nav-font: "DM Sans", sans-serif;
+}
+
+/* Main text */
+body,
+p,
+li,
+input,
+textarea,
+select,
+button,
+label,
+small {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+/* All headings */
+h1, h2, h3, h4, h5, h6,
+.section-title h2,
+#hero h1,
+#about h2,
+#services h2,
+#services h3,
+#team h2,
+#team h4,
+#inside-pawlidays h2,
+#inside-pawlidays h3,
+#faq h2,
+#contact h2 {
+  font-family: "Fraunces", Georgia, serif !important;
+  font-weight: 500;
+}
+
+/* Navigation and buttons */
+.navmenu a,
+.paw-nav-button,
+.paw-primary-button,
+.paw-secondary-link,
+.paw-service-bottom,
+.paw-services-cta,
+.paw-inside-link,
+.btn,
+.btn-get-started {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+/* Brand logo */
+#header .paw-brand {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+}
+
+/* Small labels */
+.paw-kicker,
+.paw-eyebrow,
+.paw-services-eyebrow,
+.paw-inside-label,
+.paw-inside-small,
+.paw-service-top span {
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* Decorative dogs */
+
+#hero {
+  position: relative;
+  overflow: hidden;
+}
+
+#hero .paw-decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.paw-doodle {
+  position: absolute;
+  width: 125px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.paw-doodle-top {
+  top: 35px;
+  left: 2%;
+  transform: rotate(-12deg);
+}
+
+.paw-doodle-bottom {
+  bottom: 25px;
+  right: 2%;
+  transform: rotate(8deg);
+}
+
+@media (max-width: 768px) {
+  .paw-doodle {
+    width: 65px;
+    opacity: 0.6;
+  }
+}
+
+/* END OF PAWLIDAYS CSS */

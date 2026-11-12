@@ -4804,4 +4804,59 @@ em {
   }
 }
 
+/* PAWLIDAYS — EDITORIAL ABOUT LAYOUT */
+
+#inside-pawlidays {
+  position: relative;
+  background: #F7F4ED;
+}
+
+#inside-pawlidays .paw-about-anchor {
+  position: absolute;
+  top: -90px;
+}
+
+/* Three clean editorial columns, no cards */
+#inside-pawlidays .paw-inside-value {
+  background: transparent;
+  border-radius: 0;
+  border-top: 1px solid #C9C7BB;
+  padding: 28px 5px;
+  box-shadow: none;
+  transition: none;
+}
+
+#inside-pawlidays .paw-inside-value:hover {
+  transform: none;
+}
+
+/* Icons */
+#inside-pawlidays .paw-inside-value > i {
+  color: #C45124;
+  font-size: 25px;
+}
+
+/* Headings */
+#inside-pawlidays .paw-inside-value h4 {
+  font-family: "Manrope", sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+  color: #343C32;
+}
+
+/* Main heading */
+#inside-pawlidays h2,
+#inside-pawlidays h3 {
+  font-family: "Manrope", sans-serif !important;
+  font-style: normal;
+  color: #343C32;
+}
+
+/* Brand accent */
+#inside-pawlidays h2 em,
+#inside-pawlidays h3 em {
+  color: #C45124;
+  font-style: normal;
+}
+
 /* END OF PAWLIDAYS CSS */

@@ -1434,6 +1434,41 @@ section,
     left: auto;
   }
 }
+/* Make all slides equal height */
+#testimonials .swiper-wrapper {
+  align-items: stretch;
+}
+
+#testimonials .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+/* Equal height cards */
+#testimonials .testimonial-item {
+  width: 100%;
+  height:75%;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 22px;
+  padding: 35px;
+}
+
+/* Keep review text neatly positioned */
+#testimonials .testimonial-item p {
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+/* Mobile adaptation */
+@media (max-width: 767px) {
+  #testimonials .testimonial-item {
+    min-height: 350px;
+    padding: 25px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Pricing Section

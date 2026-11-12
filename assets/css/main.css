@@ -4305,4 +4305,219 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+/* =========================================
+   PAWLIDAYS HERO — LAYOUT FIX
+   ========================================= */
+
+#hero.paw-hero {
+  position: relative;
+  background: #F4F0E6;
+  padding: 110px 0 120px;
+  min-height: auto;
+  overflow: hidden;
+  display: block;
+}
+
+#hero.paw-hero > .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1320px;
+  width: 100%;
+}
+
+#hero .paw-hero-content {
+  width: 100%;
+  max-width: 590px;
+}
+
+#hero .paw-hero-eyebrow {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #765642;
+  margin-bottom: 25px;
+}
+
+#hero.paw-hero h1 {
+  font-family: "Fraunces", Georgia, serif !important;
+  font-size: clamp(46px, 4.8vw, 76px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -2.5px;
+  color: #343C32;
+  max-width: none;
+  width: 100%;
+  margin: 0 0 28px;
+}
+
+#hero.paw-hero h1 em {
+  font-weight: 400;
+  color: #765642;
+}
+
+#hero .paw-hero-description {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #594F46;
+  max-width: 480px;
+  margin: 0 0 32px;
+}
+
+#hero .paw-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+#hero .paw-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #343C32;
+  color: #fff;
+  padding: 16px 26px;
+  border-radius: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#hero .paw-primary-button:hover {
+  background: #765642;
+  color: #fff;
+}
+
+#hero .paw-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #343C32;
+  text-decoration: none;
+  border-bottom: 1px solid #879078;
+  padding-bottom: 5px;
+}
+
+#hero .paw-hero-image-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+}
+
+#hero .paw-hero-image {
+  display: block;
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 260px 260px 24px 24px;
+}
+
+#hero .paw-hero-sticker {
+  position: absolute;
+  left: -35px;
+  bottom: 55px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #C99D76;
+  color: #343C32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  transform: rotate(-12deg);
+}
+
+#hero .paw-hero-sticker i {
+  font-size: 15px;
+}
+
+/* Decorative dogs */
+#hero .paw-decorations {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#hero .paw-doodle {
+  position: absolute;
+  width: 100px;
+  height: auto;
+}
+
+#hero .paw-doodle-top {
+  top: 30px;
+  left: 3%;
+}
+
+#hero .paw-doodle-bottom {
+  bottom: 25px;
+  right: 3%;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  #hero.paw-hero {
+    padding: 75px 0;
+  }
+
+  #hero .paw-hero-image-wrap {
+    margin: 0 auto;
+  }
+
+  #hero .paw-hero-image {
+    height: 470px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  #hero.paw-hero {
+    padding: 60px 0 80px;
+  }
+
+  #hero.paw-hero h1 {
+    font-size: 46px;
+    letter-spacing: -1.5px;
+  }
+
+  #hero .paw-hero-description {
+    font-size: 15px;
+  }
+
+  #hero .paw-hero-actions {
+    gap: 18px;
+  }
+
+  #hero .paw-hero-image {
+    height: 390px;
+  }
+
+  #hero .paw-hero-sticker {
+    left: -5px;
+    width: 95px;
+    height: 95px;
+    font-size: 9px;
+  }
+
+  #hero .paw-doodle {
+    width: 65px;
+  }
+}
+
 /* END OF PAWLIDAYS CSS */

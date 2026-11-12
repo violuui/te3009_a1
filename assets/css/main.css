@@ -3613,7 +3613,7 @@ section.section {
   display: inline-flex;
   align-items: center;
   gap: 15px;
-  background: #343C32;
+  background: #E77D46;;
   color: #fff;
   border-radius: 50px;
   padding: 16px 26px;
@@ -4517,6 +4517,255 @@ h1, h2, h3, h4, h5, h6,
 
   #hero .paw-doodle {
     width: 65px;
+  }
+}
+
+/* =====================================
+   PAWLIDAYS — TYPOGRAPHY & BUTTONS
+   ===================================== */
+
+:root {
+  --default-font: "DM Sans", sans-serif;
+  --heading-font: "Manrope", sans-serif;
+  --nav-font: "DM Sans", sans-serif;
+
+  --paw-orange: #E77D46;
+  --paw-green: #343C32;
+  --paw-cream: #F4F0E6;
+  --paw-brown: #765642;
+}
+
+/* Unified sans-serif headings */
+
+h1, h2, h3, h4, h5, h6,
+.section-title h2,
+#hero.paw-hero h1,
+#services .paw-services-heading h2,
+#services .paw-service-box h3,
+#inside-pawlidays h2,
+#inside-pawlidays h3,
+#inside-pawlidays .paw-inside-value h4,
+#pricing h2,
+#pricing h3,
+#pricing h4,
+#faq h2,
+#faq h3,
+#team h2,
+#team h4 {
+  font-family: "Manrope", sans-serif !important;
+  font-style: normal !important;
+  letter-spacing: -0.035em;
+}
+
+/* No italic text anywhere */
+em {
+  font-style: normal !important;
+}
+
+/* Keep Pawlidays logo in its original font */
+#header .paw-brand {
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 700;
+}
+
+/* Header booking button — dark olive */
+#header .paw-nav-button {
+  background: #343C32;
+  color: #FFFFFF;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+#header .paw-nav-button:hover {
+  background: #765642;
+  color: #FFFFFF;
+}
+
+/* Main actions — orange */
+#hero .paw-primary-button,
+#services .paw-services-cta,
+#pricing .buy-btn,
+#contact .php-email-form button[type="submit"] {
+  background: #E77D46;
+  color: #242922;
+  border: 1px solid #E77D46;
+  border-radius: 50px;
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 700;
+  box-shadow: none;
+  transition: all 0.25s ease;
+}
+
+#hero .paw-primary-button:hover,
+#services .paw-services-cta:hover,
+#pricing .buy-btn:hover,
+#contact .php-email-form button[type="submit"]:hover {
+  background: #343C32;
+  border-color: #343C32;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* =====================================
+   PAWLIDAYS — LIGHT PRICING
+   ===================================== */
+
+#pricing.paw-pricing {
+  background: #F7F4ED;
+  padding: 95px 0;
+}
+
+#pricing .section-title h2 {
+  color: #343C32;
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+#pricing .section-title p {
+  color: #594F46;
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+#pricing .pricing-item,
+#pricing .featured .pricing-item {
+  background: #FFFFFF;
+  color: #343C32;
+  padding: 34px;
+  border: 1px solid #E7E2D9;
+  border-radius: 20px;
+  box-shadow: none;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#pricing .pricing-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(52, 60, 50, 0.07);
+}
+
+#pricing .paw-price-label {
+  color: #765642;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  margin-bottom: 20px;
+}
+
+#pricing .pricing-item h3 {
+  color: #343C32;
+  font-size: 23px;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+#pricing .pricing-item p {
+  color: #594F46;
+  line-height: 1.75;
+}
+
+#pricing .pricing-item ul {
+  padding: 15px 0 20px;
+  margin: 0;
+  color: #343C32;
+}
+
+#pricing .pricing-item ul li {
+  color: #343C32;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+#pricing .pricing-item ul i {
+  color: #765642;
+  font-size: 19px;
+  margin-right: 8px;
+}
+
+#pricing .paw-price-bottom {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid #E7E2D9;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#pricing .paw-price-bottom > span {
+  font-size: 13px;
+  color: #765642;
+  font-weight: 600;
+}
+
+#pricing .buy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 23px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  #pricing.paw-pricing {
+    padding: 65px 0;
+  }
+}
+
+/* =====================================
+   PAWLIDAYS — FAQ CONTRAST FIX
+   ===================================== */
+
+#faq.faq {
+  background: #FFFFFF;
+  padding: 90px 0;
+}
+
+#faq .section-title h2 {
+  color: #343C32;
+}
+
+#faq .faq-container .faq-item {
+  background: #F7F4ED;
+  border: 1px solid #E5DED3;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  padding: 24px 28px;
+  transition: background 0.25s ease,
+              border-color 0.25s ease;
+}
+
+#faq .faq-container .faq-item h3 {
+  color: #343C32;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#faq .faq-container .faq-item .faq-content p {
+  color: #594F46;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+#faq .faq-container .faq-item.faq-active {
+  background: #FFF2E9;
+  border-color: #E77D46;
+}
+
+#faq .faq-container .faq-item.faq-active h3 {
+  color: #343C32;
+}
+
+#faq .faq-container .faq-item .faq-toggle,
+#faq .faq-container .faq-active .faq-toggle {
+  color: #765642;
+}
+
+@media (max-width: 767px) {
+  #faq.faq {
+    padding: 65px 0;
   }
 }
 

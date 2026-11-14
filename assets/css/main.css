@@ -948,7 +948,98 @@ section,
     font-size: 18px;
   }
 }
+/* =====================================
+   PAWLIDAYS — DECORATIVE DOG DOODLES
+   ===================================== */
 
+.paw-doodle {
+  position: absolute;
+  width: 78px;
+  height: auto;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.paw-doodle-sm {
+  width: 62px;
+}
+
+.paw-doodle-lg {
+  width: 92px;
+}
+
+/* Hero */
+.paw-doodle-hero-top-left {
+  top: 26px;
+  left: 42px;
+}
+
+.paw-doodle-hero-bottom-right {
+  right: 38px;
+  bottom: 28px;
+}
+
+/* Services */
+.paw-doodle-services-top {
+  top: 20px;
+  right: 60px;
+}
+
+.paw-doodle-services-bottom {
+  left: 40px;
+  bottom: 12px;
+}
+
+/* Blog */
+.paw-doodle-blog-top {
+  top: 18px;
+  left: 30px;
+}
+
+.paw-doodle-blog-bottom {
+  right: 26px;
+  bottom: 20px;
+}
+
+/* FAQ */
+.paw-doodle-faq {
+  right: 30px;
+  top: 10px;
+}
+
+/* Footer */
+.paw-doodle-footer {
+  right: 35px;
+  bottom: 20px;
+}
+
+/* Important: section must be relative */
+.paw-has-doodle {
+  position: relative;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .paw-doodle {
+    width: 58px;
+  }
+
+  .paw-doodle-lg {
+    width: 70px;
+  }
+}
+
+@media (max-width: 575px) {
+  .paw-doodle {
+    width: 46px;
+    opacity: 0.95;
+  }
+
+  /* hide some extra doodles on mobile */
+  .paw-doodle-hide-mobile {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
@@ -1283,7 +1374,7 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
-  font-size: 14px;
+  font-size: 21px;
   padding: 5px 10px;
   font-weight: 400;
   color: #ffffff;
@@ -1298,7 +1389,7 @@ section,
   display: inline-block;
   left: 0;
   right: 0;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1359,7 +1450,7 @@ section,
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
+  font-size: 21px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0;
 }
@@ -1500,7 +1591,7 @@ section,
 
 .pricing h4 span {
   color: color-mix(in srgb, var(--default-color), transparent 60%);
-  font-size: 18px;
+  font-size: 21px;
 }
 
 .pricing ul {
@@ -1543,7 +1634,7 @@ section,
   border-radius: 4px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
   transition: none;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 500;
   font-family: var(--heading-font);
   transition: 0.3s;
@@ -1607,7 +1698,7 @@ section,
 
 .faq .faq-container .faq-item h3 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 21px;
   line-height: 24px;
   margin: 0 30px 0 0;
   transition: 0.3s;
@@ -1642,7 +1733,7 @@ section,
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 16px;
+  font-size: 21px;
   line-height: 0;
   transition: 0.3s;
   cursor: pointer;
@@ -1771,7 +1862,7 @@ section,
 .contact .info-item h3 {
   font-size: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1779,7 +1870,7 @@ section,
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 21px;
 }
 
 .contact .php-email-form {
@@ -1798,7 +1889,7 @@ section,
 .contact .php-email-form input[type=text],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
-  font-size: 14px;
+  font-size: 21px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
@@ -1872,7 +1963,7 @@ section,
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
+  font-size: 21px;
 }
 
 .portfolio-details .portfolio-info ul li+li {
@@ -1934,7 +2025,7 @@ section,
 }
 
 .service-details .services-list a i {
-  font-size: 16px;
+  font-size: 21px;
   margin-right: 8px;
   color: var(--accent-color);
 }
@@ -2007,13 +2098,13 @@ section,
 }
 
 .service-details p {
-  font-size: 15px;
+  font-size: 21px;
 }
 
 .service-details ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
+  font-size: 21px;
 }
 
 .service-details ul li {
@@ -2462,7 +2553,7 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
   border-radius: 4px;
   padding: 10px 10px;
-  font-size: 14px;
+  font-size: 21px;
   height: 120px;
 }
 
@@ -2549,7 +2640,7 @@ section,
   right: 0;
   bottom: 0;
   border: 0;
-  font-size: 16px;
+  font-size: 21px;
   padding: 0 15px;
   margin: -1px;
   transition: 0.3s;
@@ -2595,7 +2686,7 @@ section,
 .categories-widget ul a span {
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 14px;
+  font-size: 21px;
 }
 
 .recent-posts-widget .post-item {
@@ -2613,7 +2704,7 @@ section,
 }
 
 .recent-posts-widget .post-item h4 {
-  font-size: 15px;
+  font-size: 21px;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -2630,7 +2721,7 @@ section,
 .recent-posts-widget .post-item time {
   display: block;
   font-style: italic;
-  font-size: 14px;
+  font-size: 21px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
 
@@ -2650,7 +2741,7 @@ section,
 
 .tags-widget ul a {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 14px;
+  font-size: 21px;
   padding: 6px 14px;
   margin: 0 6px 8px 0;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
@@ -2667,7 +2758,7 @@ section,
 .tags-widget ul a span {
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
-  font-size: 14px;
+  font-size: 21px;
 }
 
 
@@ -2722,7 +2813,7 @@ body {
   background-color: var(--paw-ivory);
   color: var(--paw-olive);
   font-family: var(--default-font);
-  font-size: 16px;
+  font-size: 21px;
   line-height: 1.7;
 }
 
@@ -3074,6 +3165,26 @@ section.section {
 
 .portfolio .portfolio-filters li.filter-active {
   color: var(--paw-brown);
+}
+
+/* Gallery decorative dog */
+
+#portfolio .paw-gallery-doodle {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 35px;
+}
+
+#portfolio .paw-gallery-doodle img {
+  display: block;
+  width: 105px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  #portfolio .paw-gallery-doodle img {
+    width: 70px;
+  }
 }
 
 
@@ -3564,7 +3675,7 @@ section.section {
 
   #header.paw-header .navmenu a {
     padding: 8px 0;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
   }
 }
@@ -3577,7 +3688,7 @@ section.section {
   border-radius: 40px;
   background: #343C32;
   color: #fff;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   white-space: nowrap;
   text-decoration: none;
@@ -3631,7 +3742,7 @@ section.section {
 
 #hero.paw-hero .paw-hero-description {
   max-width: 490px;
-  font-size: 16px;
+  font-size: 21px;
   line-height: 1.85;
   color: #594030;
   margin-bottom: 32px;
@@ -3653,7 +3764,7 @@ section.section {
   border-radius: 50px;
   padding: 16px 26px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -3662,7 +3773,7 @@ section.section {
   align-items: center;
   gap: 10px;
   color: #343C32;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   border-bottom: 1px solid #879078;
@@ -3805,8 +3916,11 @@ section.section {
 
 
 /* ====================================
-   PAWLIDAYS — SERVICES REDESIGN
+   PAWLIDAYS — SERVICES 
    ==================================== */
+/* =====================================
+   PAWLIDAYS — SERVICES
+   ===================================== */
 
 #services.paw-services {
   background: #343C32;
@@ -3814,204 +3928,217 @@ section.section {
   position: relative;
 }
 
-/* Heading */
-
 .paw-services-heading {
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 65px;
+  margin-bottom: 55px;
 }
 
-.paw-services-eyebrow {
-  display: block;
-  font-family: "DM Sans", sans-serif;
-  font-size: 11px;
+.paw-services-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #D69D78;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 2.5px;
-  color: #C99D76;
-  margin-bottom: 20px;
+  letter-spacing: 2px;
 }
 
 #services .paw-services-heading h2 {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(42px, 5vw, 66px);
-  line-height: 1.15;
-  letter-spacing: -2px;
-  color: #FAF8F3;
-  margin-bottom: 24px;
+  font-family: "Manrope", sans-serif !important;
+  font-size: clamp(48px, 5vw, 72px);
+  color: #E8E3D7;
+  margin-bottom: 18px;
+  letter-spacing: -0.04em;
 }
 
-#services .paw-services-heading h2 em {
-  color: #C99D76;
-  font-weight: 400;
-}
-
-.paw-services-heading p {
-  color: #E6E5DD;
-  font-size: 16px;
-  line-height: 1.8;
+#services .paw-services-heading p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #F2EEE5;
+  font-size: 21px;
+  line-height: 1.6;
 }
 
 /* Service cards */
 
-#services .paw-service-box {
+.paw-service-card {
+  background: #F4F0E6;
+  border-radius: 28px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  min-height: 320px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paw-service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+}
+
+.paw-service-image {
+  width: 50%;
+  min-height: 320px;
+  overflow: hidden;
+}
+
+.paw-service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text side */
+
+.paw-service-content {
+  width: 50%;
+  padding: 34px 32px 28px;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  min-height: 310px;
-  padding: 38px 42px;
-  background: #F4F0E6;
-  border: 1px solid transparent;
-  border-radius: 24px;
-  text-decoration: none;
-  color: #343C32;
-  transition:
-    transform 0.35s ease,
-    background 0.35s ease,
-    box-shadow 0.35s ease;
-}
-
-#services .paw-service-box:hover {
-  background: #FAF8F3;
-  transform: translateY(-7px);
-  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.12);
-}
-
-.paw-service-top {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 
-.paw-service-top > i {
-  font-size: 35px;
-  line-height: 1;
-  color: #765642;
-}
-
-.paw-service-top span {
-  font-family: "DM Sans", sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #879078;
-}
-
-#services .paw-service-box h3 {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: -0.6px;
-  color: #343C32;
-  margin-bottom: 16px;
-}
-
-#services .paw-service-box p {
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
-  line-height: 1.85;
-  color: #594F46;
-  max-width: 430px;
-  margin-bottom: 30px;
-}
-
-.paw-service-bottom {
+.paw-service-meta {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-top: auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(52, 60, 50, 0.15);
-}
-
-.paw-service-bottom span {
-  font-size: 13px;
+  align-items: center;
+  margin-bottom: 26px;
+  color: #8C7A67;
+  font-size: 12px;
   font-weight: 700;
-  color: #765642;
+  letter-spacing: 1.6px;
 }
 
-.paw-service-bottom i {
+#services .paw-service-content h3 {
+  font-family: "Manrope", sans-serif !important;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #2E362F;
+  margin-bottom: 18px;
+  letter-spacing: -0.03em;
+}
+
+#services .paw-service-content p {
   font-size: 21px;
-  color: #765642;
-  transition: transform 0.3s ease;
+  line-height: 1.6;
+  color: #5F564D;
+  margin-bottom: 30px;
 }
 
-.paw-service-box:hover .paw-service-bottom i {
-  transform: translate(4px, -4px);
+.paw-service-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #8D5B3E;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.25s ease;
 }
 
-/* Bottom call to action */
+.paw-service-link:hover {
+  color: #E77D46;
+}
+
+.paw-service-link i {
+  font-size: 18px;
+}
+
+/* Footer CTA */
 
 .paw-services-footer {
+  margin-top: 50px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(244, 240, 230, 0.14);
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 25px;
-  margin-top: 65px;
-  padding-top: 35px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.paw-services-footer span {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #C99D76;
-}
-
-#services .paw-services-footer h3 {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 28px;
-  color: #FAF8F3;
-  margin: 12px 0 0;
+.paw-services-footer h3 {
+  font-family: "Manrope", sans-serif !important;
+  color: #F4F0E6;
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0;
 }
 
 .paw-services-cta {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
-  padding: 15px 26px;
-  background: #C99D76;
-  color: #343C32;
-  border-radius: 50px;
+  justify-content: center;
+  background: #E77D46;
+  color: #2E362F;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 700;
-  white-space: nowrap;
-  transition: background 0.3s ease,
-              transform 0.3s ease;
+  padding: 16px 28px;
+  border-radius: 999px;
+  min-width: 170px;
+  transition: all 0.25s ease;
 }
 
 .paw-services-cta:hover {
-  background: #E2B58F;
-  color: #343C32;
-  transform: translateY(-3px);
+  background: #F4F0E6;
+  color: #2E362F;
 }
 
 /* Responsive */
 
-@media (max-width: 767px) {
-  #services.paw-services {
-    padding: 75px 0;
+@media (max-width: 991px) {
+  .paw-service-card {
+    flex-direction: column;
+    min-height: auto;
   }
 
-  .paw-services-heading {
-    margin-bottom: 40px;
+  .paw-service-image,
+  .paw-service-content {
+    width: 100%;
   }
 
-  #services .paw-service-box {
-    padding: 28px;
-    min-height: 280px;
+  .paw-service-image {
+    min-height: 260px;
   }
 
-  #services .paw-service-box h3 {
-    font-size: 26px;
+  .paw-service-content {
+    padding: 28px 24px 24px;
+  }
+
+  #services .paw-services-heading h2 {
+    font-size: 52px;
   }
 
   .paw-services-footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 575px) {
+  #services.paw-services {
+    padding: 80px 0;
+  }
+
+  #services .paw-services-heading h2 {
+    font-size: 42px;
+  }
+
+  #services .paw-services-heading p,
+  #services .paw-service-content p {
+    font-size: 19px;
+  }
+
+  #services .paw-service-content h3 {
+    font-size: 24px;
+  }
+
+  .paw-services-footer h3 {
+    font-size: 30px;
   }
 }
 
@@ -4113,7 +4240,7 @@ section.section {
 
 .paw-inside-content p {
   color: #594F46;
-  font-size: 15px;
+  font-size: 21px;
   line-height: 1.9;
   margin-bottom: 18px;
 }
@@ -4170,7 +4297,7 @@ section.section {
 }
 
 .paw-inside-value p {
-  font-size: 13px;
+  font-size: 21px;
   color: #594F46;
   line-height: 1.7;
   margin: 0;
@@ -4327,6 +4454,121 @@ h1, h2, h3, h4, h5, h6,
   .paw-doodle {
     width: 65px;
     opacity: 0.6;
+  }
+}
+
+/* ======================================
+   PAWLIDAYS — DECORATIVE DOG MASCOTS
+   ====================================== */
+
+/* Containers for positioning */
+
+#inside-pawlidays,
+#services,
+#team,
+#faq,
+#footer,
+.paw-blog-main {
+  position: relative;
+}
+
+/* Common doodle styling */
+
+.paw-mascot {
+  position: absolute;
+  width: 90px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Keep content above decoration */
+
+#inside-pawlidays > .container,
+#services > .container,
+#team > .container,
+#faq > .container,
+#footer > .container,
+.paw-blog-main > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* 1. Inside Pawlidays */
+
+.paw-mascot-inside {
+  right: 2%;
+  bottom: 20px;
+  width: 85px;
+}
+
+/* 3. Team */
+
+.paw-mascot-team {
+  left: 3%;
+  top: 60px;
+  width: 85px;
+}
+
+/* 4. FAQ */
+
+.paw-mascot-faq {
+  right: 3%;
+  bottom: 25px;
+  width: 100px;
+}
+
+/* 5. Footer */
+
+.paw-mascot-footer {
+  right: 2%;
+  bottom: 16px;
+  width: 75px;
+}
+
+/* 6. Blog */
+
+.paw-mascot-blog {
+  top: 115px;
+  right: 4%;
+  width: 95px;
+}
+
+/* Tablet */
+
+@media (max-width: 1199px) {
+  .paw-mascot {
+    width: 65px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .paw-mascot {
+    width: 48px;
+  }
+
+  /* Hide where they might overlap content */
+  .paw-mascot-inside,
+  .paw-mascot-team,
+  .paw-mascot-blog {
+    display: none;
+  }
+.paw-mascot-services {
+  display: block;
+  width: 55px;
+  left: 12px;
+  bottom: 12px;
+}
+  .paw-mascot-faq {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .paw-mascot-footer {
+    right: 12px;
+    bottom: 12px;
   }
 }
 
@@ -4600,7 +4842,7 @@ em {
   border-radius: 50px;
   font-weight: 700;
 }
-
+font-size
 #header .paw-nav-button:hover {
   background: #765642;
   color: #FFFFFF;
@@ -4698,7 +4940,7 @@ em {
 
 #pricing .pricing-item ul li {
   color: #343C32;
-  font-size: 14px;
+  font-size: 18px;
   padding: 8px 0;
 }
 
@@ -4719,7 +4961,7 @@ em {
 }
 
 #pricing .paw-price-bottom > span {
-  font-size: 13px;
+  font-size: 18px;
   color: #765642;
   font-weight: 600;
 }
@@ -4729,7 +4971,7 @@ em {
   align-items: center;
   gap: 12px;
   padding: 13px 23px;
-  font-size: 13px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -4764,13 +5006,13 @@ em {
 
 #faq .faq-container .faq-item h3 {
   color: #343C32;
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 700;
 }
 
 #faq .faq-container .faq-item .faq-content p {
   color: #594F46;
-  font-size: 15px;
+  font-size: 21px;
   line-height: 1.8;
 }
 

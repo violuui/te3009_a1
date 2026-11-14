@@ -12,8 +12,8 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
+  --default-font: "Poppins", sans-serif;
+  --heading-font: "Poppins",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
@@ -2897,7 +2897,7 @@ section.section {
 }
 
 .section-title h2::after {
-  background-color: var(--paw-tan);
+  background-color: #353c33;
 }
 
 .section-title p {
@@ -3086,7 +3086,7 @@ section.section {
 
 .testimonials .section-title h2,
 .testimonials .section-title p {
-  color: var(--paw-olive);
+  color: #ffffff;;
 }
 
 .testimonials .testimonial-item {
@@ -4093,7 +4093,6 @@ section.section {
 }
 
 .paw-inside-sticker span {
-  font-family: "Fraunces", Georgia, serif;
   font-size: 17px;
   letter-spacing: 0;
   margin-top: 5px;
@@ -4222,15 +4221,6 @@ section.section {
     margin-top: 45px;
   }
 }
-/* ======================================
-   PAWLIDAYS — GLOBAL TYPOGRAPHY
-   ====================================== */
-
-:root {
-  --default-font: "DM Sans", sans-serif;
-  --heading-font: "Fraunces", Georgia, serif;
-  --nav-font: "DM Sans", sans-serif;
-}
 
 /* Main text */
 body,
@@ -4242,7 +4232,7 @@ select,
 button,
 label,
 small {
-  font-family: "DM Sans", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 /* All headings */
@@ -4258,8 +4248,8 @@ h1, h2, h3, h4, h5, h6,
 #inside-pawlidays h3,
 #faq h2,
 #contact h2 {
-  font-family: "Fraunces", Georgia, serif !important;
-  font-weight: 500;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
 }
 
 /* Navigation and buttons */
@@ -4272,12 +4262,12 @@ h1, h2, h3, h4, h5, h6,
 .paw-inside-link,
 .btn,
 .btn-get-started {
-  font-family: "DM Sans", sans-serif !important;
+  font-family:  "Poppins", sans-serif !important;
 }
 
 /* Brand logo */
 #header .paw-brand {
-  font-family: "DM Sans", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-size: 34px;
   font-weight: 700;
   letter-spacing: -1.8px;
@@ -4290,7 +4280,7 @@ h1, h2, h3, h4, h5, h6,
 .paw-inside-label,
 .paw-inside-small,
 .paw-service-top span {
-  font-family: "DM Sans", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
@@ -4367,7 +4357,7 @@ h1, h2, h3, h4, h5, h6,
 
 #hero .paw-hero-eyebrow {
   display: block;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.8px;
@@ -4376,9 +4366,9 @@ h1, h2, h3, h4, h5, h6,
 }
 
 #hero.paw-hero h1 {
-  font-family: "Fraunces", Georgia, serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-size: clamp(46px, 4.8vw, 76px);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.12;
   letter-spacing: -2.5px;
   color: #343C32;
@@ -4393,7 +4383,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 #hero .paw-hero-description {
-  font-family: "DM Sans", sans-serif;
+  font-family:  "Poppins", sans-serif !important;
   font-size: 16px;
   line-height: 1.85;
   color: #594F46;
@@ -4417,7 +4407,7 @@ h1, h2, h3, h4, h5, h6,
   color: #fff;
   padding: 16px 26px;
   border-radius: 50px;
-  font-family: "DM Sans", sans-serif;
+  font-family:  "Poppins", sans-serif !important;
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
@@ -4433,7 +4423,7 @@ h1, h2, h3, h4, h5, h6,
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: "DM Sans", sans-serif;
+  font-family:  "Poppins", sans-serif !important;
   font-size: 13px;
   font-weight: 600;
   color: #343C32;
@@ -4560,9 +4550,9 @@ h1, h2, h3, h4, h5, h6,
    ===================================== */
 
 :root {
-  --default-font: "DM Sans", sans-serif;
-  --heading-font: "Manrope", sans-serif;
-  --nav-font: "DM Sans", sans-serif;
+  --default-font:  "Poppins", sans-serif !important;
+  --heading-font:  "Poppins", sans-serif !important;
+  --nav-font:  "Poppins", sans-serif !important;
 
   --paw-orange: #E77D46;
   --paw-green: #343C32;
@@ -4587,7 +4577,7 @@ h1, h2, h3, h4, h5, h6,
 #faq h3,
 #team h2,
 #team h4 {
-  font-family: "Manrope", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-style: normal !important;
   letter-spacing: -0.035em;
 }
@@ -4599,7 +4589,7 @@ em {
 
 /* Keep Pawlidays logo in its original font */
 #header .paw-brand {
-  font-family: "DM Sans", sans-serif !important;
+  font-family:  "Poppins", sans-serif !important;
   font-weight: 700;
 }
 
@@ -4625,7 +4615,7 @@ em {
   color: #242922;
   border: 1px solid #E77D46;
   border-radius: 50px;
-  font-family: "DM Sans", sans-serif !important;
+  font-family:  "Poppins", sans-serif !important;
   font-weight: 700;
   box-shadow: none;
   transition: all 0.25s ease;
@@ -4838,7 +4828,7 @@ em {
 
 /* Headings */
 #inside-pawlidays .paw-inside-value h4 {
-  font-family: "Manrope", sans-serif !important;
+  font-family:  "Poppins", sans-serif !important;
   font-weight: 700;
   font-style: normal;
   color: #343C32;
@@ -4847,7 +4837,7 @@ em {
 /* Main heading */
 #inside-pawlidays h2,
 #inside-pawlidays h3 {
-  font-family: "Manrope", sans-serif !important;
+  font-family:  "Poppins", sans-serif !important;
   font-style: normal;
   color: #343C32;
 }

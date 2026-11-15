@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#343C32">
   <title>Pawlidays | Happy Days for Happy Dogs</title>
   <meta name="description" content="Pawlidays offers dog daycare, boarding, grooming and dog walking in Cyprus. A happy place for your four-legged friend.">
 
@@ -11,12 +12,9 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
  
-<!-- Pawlidays Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -26,62 +24,39 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Presento
-  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+  </head>
 
 <body class="index-page">
 
   
+<a class="skip-link" href="#main">Skip to content</a>
 <header id="header" class="header paw-header d-flex align-items-center sticky-top">
   <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-    <a href="index.html" class="logo d-flex align-items-center me-auto">
+    <a href="index.html" class="logo d-flex align-items-center me-auto" aria-label="Pawlidays home">
       <span class="paw-brand">pawlidays<span class="paw-brand-dot">.</span></span>
     </a>
-
-    <nav id="navmenu" class="navmenu">
+    <nav id="navmenu" class="navmenu" aria-label="Main">
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="index.html#about">Our Story</a></li>
         <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#portfolio">Gallery</a></li>
         <li><a href="index.html#team">Our Team</a></li>
         <li><a href="blog.html">The Dog Journal</a></li>
         <li><a href="index.html#contact">Contact</a></li>
+        <li class="d-xl-none"><a href="index.html#contact">Book a Visit</a></li>
       </ul>
-
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      <button type="button" class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Open menu" aria-expanded="false"></button>
     </nav>
-
-    <a class="paw-nav-button" href="index.html#contact">
-      Book a Visit
-    </a>
-
+    <a class="paw-nav-button" href="index.html#contact">Book a Visit</a>
   </div>
 </header>
-
-
-  <main class="main">
+<main class="main" id="main">
 
    
 <!-- PAWLIDAYS HERO -->
 <section id="hero" class="paw-hero section">
-
-  <!-- Decorative dogs -->
-  <div class="paw-decorations" aria-hidden="true">
-    <img src="assets/img/doodles/dog-running.png"
-         class="paw-doodle paw-doodle-top" alt="">
-
-    <img src="assets/img/doodles/dog-sitting.png"
-         class="paw-doodle paw-doodle-bottom" alt="">
-  </div>
-
-  <div class="container">
+<div class="container">
 
     <div class="row align-items-center gy-5">
 
@@ -90,17 +65,13 @@
 
         <div class="paw-hero-content">
 
-          <h1>
-            Life is better<br>
-            with a little<br>
-            <em>pawliday</em>
-          </h1>
+          <h1>Life is better with a little <em>pawliday</em></h1>
 
           <p class="paw-hero-description">
             A happy place for your four-legged best friend.
             From playful daycare and cosy overnight stays
             to grooming and outdoor adventures, we make
-            every visit feel like a little holiday
+            every visit feel like a little holiday.
           </p>
 
           <div class="paw-hero-actions">
@@ -124,11 +95,8 @@
 
         <div class="paw-hero-image-wrap">
 
-          <img
-            src="assets/img/team1.PNG"
-            alt="A happy dog with its carer at Pawlidays"
-            class="paw-hero-image"
-          >
+          <img src="assets/img/team1.jpg" alt="A happy dog with its carer at Pawlidays" class="paw-hero-image" width="1400" height="934" fetchpriority="high">
+          <div class="paw-hero-badge" aria-hidden="true">Happy<br>tails</div>
 
         </div>
 
@@ -139,22 +107,18 @@
   </div>
 
 </section>
-<!-- /PAWLIDAYS HERO -->
+<div class="paw-marquee" aria-hidden="true"><div class="paw-marquee-track"><span>Grooming</span><i>𓃠</i><span>Walks</span><i>𓃠</i><span>Daycare</span><i>𓃠</i><span>Boarding</span><i>𓃠</i><span>Grooming</span><i>𓃠</i><span>Walks</span><i>𓃠</i><span>Daycare</span><i>𓃠</i><span>Boarding</span><i>𓃠</i><span>Grooming</span><i>𓃠</i><span>Walks</span><i>𓃠</i><span>Daycare</span><i>𓃠</i><span>Boarding</span><i>𓃠</i><span>Grooming</span><i>𓃠</i><span>Walks</span><i>𓃠</i></div></div>
 
 
     
 <!-- Inside Pawlidays Section -->
-<section id="inside-pawlidays" class="paw-inside section">
-  <div id="about" class="paw-about-anchor" aria-hidden="true"></div> 
+<section id="about" class="paw-inside section">
   <div class="container">
 
     <!-- Heading -->
     <div class="row align-items-end mb-5">
       <div class="col-lg-8" data-aos="fade-up">
-        <h2>
-          Not just dog care
-         <br> <em>A place to belong</em>
-        </h2>
+        <h2>Not just dog care. <em>A place to belong.</em></h2>
       </div>
     </div>
 
@@ -163,8 +127,8 @@
 
       <div class="col-lg-7" data-aos="fade-right">
         <div class="paw-inside-image">
-          <img
-            src="assets/img/team3.PNG"
+          <img width="1400" height="934"
+            src="assets/img/team3.jpg"
             alt="The Pawlidays team spending time with dogs"
             loading="lazy"
           >
@@ -273,14 +237,11 @@
       <div class="col-lg-6" data-aos="fade-up">
         <article class="paw-service-card">
           <div class="paw-service-image">
-            <img src="assets/img/Daycare.png" alt="Dog daycare at Pawlidays">
+            <img loading="lazy" width="1400" height="934" src="assets/img/dogs_together.jpg" alt="Dog daycare at Pawlidays">
           </div>
 
           <div class="paw-service-content">
-            <div class="paw-service-meta">
-            </div>
-
-            <h3>Play, explore, repeat</h3>
+                        <h3>Play, explore, repeat</h3>
 
             <p>
               Fun-filled day visits with opportunities for play,
@@ -288,7 +249,7 @@
               welcoming environment.
             </p>
 
-            <a href="service-details.html" class="paw-service-link">
+            <a href="service-details.html#daycare" class="paw-service-link">
               Discover Daycare
             </a>
           </div>
@@ -299,14 +260,11 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
         <article class="paw-service-card">
           <div class="paw-service-image">
-            <img src="assets/img/Boarding.png" alt="Dog boarding at Pawlidays">
+            <img loading="lazy" width="1400" height="934" src="assets/img/dog_sleeping.jpg" alt="Dog boarding at Pawlidays">
           </div>
 
           <div class="paw-service-content">
-            <div class="paw-service-meta">
-            </div>
-
-            <h3>A home away from home</h3>
+                        <h3>A home away from home</h3>
 
             <p>
               Comfortable overnight stays, familiar routines
@@ -314,7 +272,7 @@
               should feel good for dogs too.
             </p>
 
-            <a href="service-details.html" class="paw-service-link">
+            <a href="service-details.html#boarding" class="paw-service-link">
               Discover Boarding
             </a>
           </div>
@@ -325,21 +283,18 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
         <article class="paw-service-card">
           <div class="paw-service-image">
-            <img src="assets/img/grooming.PNG" alt="Dog grooming at Pawlidays">
+            <img loading="lazy" width="1400" height="934" src="assets/img/grooming.jpg" alt="Dog grooming at Pawlidays">
           </div>
 
           <div class="paw-service-content">
-            <div class="paw-service-meta">
-            </div>
-
-            <h3>Fresh looks, happy tails</h3>
+                        <h3>Fresh looks, happy tails</h3>
 
             <p>
               Gentle grooming, refreshing baths and a little extra
               pampering to help your dog look and feel their best.
             </p>
 
-            <a href="service-details.html" class="paw-service-link">
+            <a href="service-details.html#grooming" class="paw-service-link">
               Discover Grooming
             </a>
           </div>
@@ -350,21 +305,18 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
         <article class="paw-service-card">
           <div class="paw-service-image">
-            <img src="assets/img/Walking.png" alt="Dog walking at Pawlidays">
+            <img loading="lazy" width="1400" height="934" src="assets/img/walking1.jpg" alt="Dog walking at Pawlidays">
           </div>
 
           <div class="paw-service-content">
-            <div class="paw-service-meta">
-            </div>
-
-            <h3>Every walk’s an adventure</h3>
+                        <h3>Every walk’s an adventure</h3>
 
             <p>
               Fresh air, new scents and enjoyable walks
               adapted to your dog’s energy, pace and routine.
             </p>
 
-            <a href="service-details.html" class="paw-service-link">
+            <a href="service-details.html#walking" class="paw-service-link">
               Discover Walking
             </a>
           </div>
@@ -378,7 +330,7 @@
         <h3>Let’s find their perfect pawliday.</h3>
       </div>
 
-      <a href="contact.html" class="paw-services-cta">
+      <a href="#contact" class="paw-services-cta">
         Get in Touch
       </a>
     </div>
@@ -390,147 +342,24 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/dog_sleeping.PNG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/dog_sleeping.PNG" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/dog_sofa.PNG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/dog_sofa.PNG" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/smiling_dog.PNG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/smiling_dog.PNG" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/dogs_together4.PNG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/dogs_together4.PNG" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/dogs_together3.PNG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/dogs_together3.PNG" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/grooming1.PNG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/grooming1.PNG" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/walking1.PNG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/walking1.PNG" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/dogs_together5.PNG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/dogs_together5.PNG" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/dogs_together2.PNG" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/dogs_together2.PNG" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+        <h2>Little moments, <em>big smiles</em></h2>
+        <p>A peek at life at Pawlidays.</p>
       </div>
-<!-- Decorative Dog in Gallery -->
-<div class="container paw-gallery-doodle">
-  <img
-    src="assets/img/doodles/dog-curious.png"
-    alt=""
-    aria-hidden="true"
-  >
-</div>
-    </section><!-- /Portfolio Section -->
+      <div class="container">
+        <div class="paw-filters" role="group" aria-label="Filter gallery"><button type="button" data-filter="all" class="is-active" aria-pressed="true">All</button><button type="button" data-filter="daycare" aria-pressed="false">Daycare</button><button type="button" data-filter="boarding" aria-pressed="false">Boarding</button><button type="button" data-filter="grooming" aria-pressed="false">Grooming</button><button type="button" data-filter="walking" aria-pressed="false">Walks</button></div>
+        <div class="paw-gallery">
+          <a href="assets/img/dogs_together5.jpg" class="glightbox" data-gallery="pawlidays" data-title="Playtime in the garden" data-cat="daycare"><img src="assets/img/dogs_together5.jpg" alt="Playtime in the garden" loading="lazy" width="1400" height="934"></a>
+          <a href="assets/img/dog_sleeping.jpg" class="glightbox" data-gallery="pawlidays" data-title="Nap time" data-cat="boarding"><img src="assets/img/dog_sleeping.jpg" alt="Nap time" loading="lazy" width="1400" height="934"></a>
+          <a href="assets/img/grooming1.jpg" class="glightbox" data-gallery="pawlidays" data-title="Spa moment" data-cat="grooming"><img src="assets/img/grooming1.jpg" alt="Spa moment" loading="lazy" width="1400" height="934"></a>
+          <a href="assets/img/womanwalking.jpg" class="glightbox" data-gallery="pawlidays" data-title="Sunny village strolls" data-cat="walking"><img src="assets/img/womanwalking.jpg" alt="Sunny village strolls" loading="lazy" width="1400" height="934"></a>
+          <a href="assets/img/dogs_together3.jpg" class="glightbox" data-gallery="pawlidays" data-title="New friends" data-cat="daycare"><img src="assets/img/dogs_together3.jpg" alt="New friends" loading="lazy" width="1400" height="934"></a>
+          <a href="assets/img/smiling_dog.jpg" class="glightbox" data-gallery="pawlidays" data-title="Happy tails" data-cat="boarding"><img src="assets/img/smiling_dog.jpg" alt="Happy tails" loading="lazy" width="1400" height="934"></a>
+          <a href="assets/img/img_1990.jpg" class="glightbox" data-gallery="pawlidays" data-title="Coastal adventures" data-cat="walking"><img src="assets/img/img_1990.jpg" alt="Coastal adventures" loading="lazy" width="1400" height="934"></a>
+          <a href="assets/img/grooming2.jpg" class="glightbox" data-gallery="pawlidays" data-title="Fresh & fluffy" data-cat="grooming"><img src="assets/img/grooming2.jpg" alt="Fresh & fluffy" loading="lazy" width="1400" height="934"></a>
+        </div>
+      </div>
+    </section><!-- /Gallery -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
@@ -698,7 +527,7 @@
       <!-- Boarding -->
       <div class="col-lg-4 col-md-6" data-aos="fade-up"
            data-aos-delay="100">
-        <div class="pricing-item">
+        <div class="pricing-item featured">
 
 
           <h3>Cosy Overnight Stays</h3>
@@ -758,9 +587,6 @@
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
-<img src="assets/img/doodles/dog-sleeping.png"
-     class="paw-mascot paw-mascot-faq"
-     alt="" aria-hidden="true">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Frequently Asked Questions</h2>
@@ -822,90 +648,33 @@
 
     <!-- Team Section -->
     <section id="team" class="team section section-bg dark-background">
-<img src="assets/img/doodles/dog-greeting.png"
-     class="paw-mascot paw-mascot-team"
-     alt="" aria-hidden="true">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Meet our team, who will look after your pets with the utmost care and affection.</p>
+        <h2>Meet the <em>pack</em></h2>
+        <p>The people who will look after your dog with care and affection.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.PNG" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-              </div>
+              <div class="member-img"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="Founder & Lead Carer" loading="lazy" width="900" height="900"></div>
+              <div class="member-info"><h4>Founder & Lead Carer</h4><span>Daycare and walks</span></div>
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.PNG" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Professional Groomer</span>
-              </div>
+              <div class="member-img"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt="Professional Groomer" loading="lazy" width="900" height="823"></div>
+              <div class="member-info"><h4>Professional Groomer</h4><span>Baths and brushing</span></div>
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
+              <div class="member-img"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt="Daycare Carer" loading="lazy" width="900" height="823"></div>
+              <div class="member-info"><h4>Daycare Carer</h4><span>Play and rest time</span></div>
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.PNG" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+          </div>
         </div>
       </div>
     </section><!-- /Team Section -->
@@ -937,7 +706,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <p>Number coming soon</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -945,7 +714,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <p>Email coming soon</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -957,19 +726,19 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <label class="visually-hidden-label" for="c-name">Your name</label><input id="c-name" type="text" name="name" class="form-control" placeholder="Your name" autocomplete="name" required>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <label class="visually-hidden-label" for="c-email">Your email</label><input id="c-email" type="email" class="form-control" name="email" placeholder="Your email" autocomplete="email" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <label class="visually-hidden-label" for="c-sub">Service</label><select id="c-sub" class="form-select" name="subject" required><option value="" selected disabled>Choose a service</option><option>Daycare</option><option>Boarding</option><option>Grooming</option><option>Dog walking</option><option>Something else</option></select>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <label class="visually-hidden-label" for="c-msg">Message</label><textarea id="c-msg" class="form-control" name="message" rows="5" placeholder="Tell us about your dog and when you need us" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -993,88 +762,55 @@
   </main>
 
   <footer id="footer" class="footer dark-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Pawlidays</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center"><span class="paw-brand">pawlidays<span class="paw-brand-dot">.</span></span></a>
+        <p class="pt-3">A happy place for four-legged friends in Cyprus: daycare, boarding, grooming and walks.</p>
+        <p class="mb-0"><strong>Location:</strong> Cyprus · details coming soon</p>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6 footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">Our Story</a></li>
+          <li><a href="index.html#portfolio">Gallery</a></li>
+          <li><a href="blog.html">The Dog Journal</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="service-details.html#daycare">Daycare</a></li>
+          <li><a href="service-details.html#boarding">Boarding</a></li>
+          <li><a href="service-details.html#grooming">Grooming</a></li>
+          <li><a href="service-details.html#walking">Dog walking</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-12 footer-newsletter">
+        <h4>Pawlidays news</h4>
+        <p>Be the first to hear when we open our doors.</p>
+        <form action="forms/newsletter.php" method="post" class="php-email-form footer-form">
+          <div class="newsletter-form"><label class="visually-hidden-label" for="nl-email">Email address</label><input id="nl-email" type="email" name="email" placeholder="Your email" autocomplete="email" required><input type="submit" value="Subscribe"></div>
+          <div class="loading">Loading</div><div class="error-message"></div>
+          <div class="sent-message">Thank you, you're on the list!</div>
+        </form>
       </div>
     </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Pawliday</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
+  </div>
+  <div class="container copyright text-center mt-4">
+    <p class="mb-0">© <strong class="px-1">Pawlidays</strong> All Rights Reserved</p>
+    <div class="credits">Template by <a href="https://bootstrapmade.com/">BootstrapMade</a>, distributed by <a href="https://themewagon.com">ThemeWagon</a></div>
+  </div>
+</footer>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

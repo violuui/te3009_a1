@@ -13,28 +13,40 @@
 /* Fonts */
 :root {
   --default-font: "Poppins", sans-serif;
-  --heading-font: "Poppins",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #111111; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e03a3c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #111111;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #e03a3c;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #212529;  /* The default color of the main navmenu links */
-  --nav-hover-color: #e03a3c; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #e03a3c; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #212529;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #e03a3c;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #e03a3c;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -823,7 +835,7 @@ section,
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -948,6 +960,7 @@ section,
     font-size: 18px;
   }
 }
+
 /* =====================================
    PAWLIDAYS — DECORATIVE DOG DOODLES
    ===================================== */
@@ -1040,6 +1053,7 @@ section,
     display: none;
   }
 }
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
@@ -1525,6 +1539,7 @@ section,
     left: auto;
   }
 }
+
 /* Make all slides equal height */
 #testimonials .swiper-wrapper {
   align-items: stretch;
@@ -1538,7 +1553,7 @@ section,
 /* Equal height cards */
 #testimonials .testimonial-item {
   width: 100%;
-  height:75%;
+  height: 75%;
   min-height: 220px;
   display: flex;
   flex-direction: column;
@@ -2761,60 +2776,57 @@ section,
   font-size: 21px;
 }
 
-
-/* ==================================================
-   PAWLIDAYS
-   Warm Brown Design
-   Custom stylesheet for Presento Bootstrap 5
-   ================================================== */
-
-
-/* 1. COLOURS AND TYPOGRAPHY
-   -------------------------------------------------- */
-
+/* =========================================================
+   PAWLIDAYS v2 — warm editorial layer
+   ========================================================= */
 :root {
   --paw-ivory: #F4F0E6;
+  --paw-cream: #FBF8F2;
   --paw-sage: #879078;
   --paw-olive: #343C32;
   --paw-tan: #C99D76;
   --paw-brown: #765642;
   --paw-coffee: #594030;
-  --paw-white: #FFFFFF;
-
-  --default-font: "DM Sans", Arial, sans-serif;
-  --heading-font: "Fraunces", Georgia, serif;
-  --nav-font: "DM Sans", Arial, sans-serif;
-
+  --paw-orange: #E77D46;
+  --paw-rust: #B4531F;
+  --paw-ink: #242922;
+  --default-font: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --heading-font: "Poppins", system-ui, sans-serif;
+  --nav-font: "Poppins", system-ui, sans-serif;
+  --paw-text: clamp(18px, 14px + 1.2vw, 21px);
+  /* set to 21px for a fixed size everywhere */
   --background-color: #F4F0E6;
-  --default-color: #343C32;
-  --heading-color: #343C32;
+  --default-color: #3b4337;
+  --heading-color: #242922;
   --accent-color: #765642;
-  --surface-color: #FFFFFF;
-  --contrast-color: #FFFFFF;
-
-  --nav-color: #343C32;
-  --nav-hover-color: #765642;
-  --nav-mobile-background-color: #FFFFFF;
-  --nav-dropdown-background-color: #FFFFFF;
-  --nav-dropdown-color: #343C32;
-  --nav-dropdown-hover-color: #765642;
+  --surface-color: #fff;
+  --contrast-color: #fff;
+  --nav-color: #242922;
+  --nav-hover-color: #B4531F;
+  --nav-mobile-background-color: #F4F0E6;
+  --nav-dropdown-color: #242922;
+  --nav-dropdown-hover-color: #B4531F;
 }
 
-
-/* 2. GENERAL STYLES
-   -------------------------------------------------- */
+.dark-background {
+  --background-color: #343C32;
+  --default-color: #EDE8DA;
+  --heading-color: #fff;
+  --surface-color: #40493d;
+  --contrast-color: #fff
+}
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 84px;
+  overflow-x: clip
 }
 
 body {
-  background-color: var(--paw-ivory);
-  color: var(--paw-olive);
-  font-family: var(--default-font);
-  font-size: 21px;
-  line-height: 1.7;
+  background: var(--paw-ivory);
+  color: var(--default-color);
+  font: 400 var(--paw-text)/1.7 var(--default-font);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased
 }
 
 h1,
@@ -2825,2270 +2837,1298 @@ h5,
 h6 {
   font-family: var(--heading-font);
   font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.12;
+  letter-spacing: -.02em;
+  color: var(--heading-color)
 }
 
-p {
-  line-height: 1.75;
+h2 em,
+h1 em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--paw-rust)
 }
 
 img {
   max-width: 100%;
+  height: auto
 }
 
 a {
-  transition: color 0.25s ease;
+  color: var(--paw-brown)
 }
 
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-  outline: 3px solid var(--paw-brown);
+a:hover {
+  color: var(--paw-rust)
+}
+
+:focus-visible {
+  outline: 3px solid var(--paw-orange);
   outline-offset: 3px;
+  border-radius: 6px
 }
 
-
-/* 3. BACKGROUND THEMES
-   -------------------------------------------------- */
-
-.light-background {
-  --background-color: #F4F0E6;
-  --default-color: #343C32;
-  --heading-color: #343C32;
-  --surface-color: #FFFFFF;
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  background: var(--paw-ink);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  z-index: 10000
 }
 
-.dark-background {
-  --background-color: #343C32;
-  --default-color: #F4F0E6;
-  --heading-color: #FFFFFF;
-  --surface-color: #594030;
-  --contrast-color: #FFFFFF;
+.skip-link:focus {
+  top: 12px;
+  color: #fff
 }
 
-
-/* 4. HEADER AND NAVIGATION
-   -------------------------------------------------- */
-
-.header {
-  background-color: var(--paw-ivory);
-  box-shadow: 0 5px 25px rgba(52, 60, 50, 0.07);
+section.section,
+.section {
+  padding: 72px 0;
+  scroll-margin-top: 70px
 }
 
-.header .logo .sitename {
-  color: var(--paw-olive);
-  font-family: var(--heading-font);
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
+@media(min-width:992px) {
 
-.navmenu a {
-  font-family: var(--nav-font);
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.navmenu a:hover,
-.navmenu .active {
-  color: var(--paw-brown);
-}
-
-.header .btn-getstarted {
-  background-color: var(--paw-brown);
-  color: var(--paw-white);
-  border-radius: 50px;
-  padding: 12px 26px;
-  font-weight: 700;
-}
-
-.header .btn-getstarted:hover {
-  background-color: var(--paw-coffee);
-  color: var(--paw-white);
-}
-
-
-/* 5. HERO SECTION
-   -------------------------------------------------- */
-
-.hero {
-  background-color: var(--paw-ivory);
-  min-height: 650px;
-  padding: 110px 0;
-  overflow: hidden;
-}
-
-.hero h2 {
-  color: var(--paw-olive);
-  font-family: var(--heading-font);
-  font-size: clamp(46px, 5.5vw, 82px);
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.04em;
-  max-width: 700px;
-}
-
-.hero p {
-  color: var(--paw-coffee);
-  font-size: 19px;
-  line-height: 1.7;
-  max-width: 550px;
-  margin-top: 22px;
-}
-
-.hero .btn-get-started {
-  display: inline-block;
-  background-color: var(--paw-brown);
-  color: var(--paw-white);
-  border-radius: 50px;
-  padding: 15px 30px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background-color 0.25s ease;
-}
-
-.hero .btn-get-started:hover {
-  background-color: var(--paw-coffee);
-  color: var(--paw-white);
-}
-
-.hero .btn-watch-video,
-.hero .btn-watch-video span,
-.hero .btn-watch-video i {
-  color: var(--paw-olive);
-}
-
-.hero .btn-watch-video:hover span {
-  color: var(--paw-brown);
-}
-
-
-/* 6. SECTION TITLES AND SPACING
-   -------------------------------------------------- */
-
-section.section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  section.section,
+  .section {
+    padding: 104px 0
+  }
 }
 
 .section-title {
-  padding-bottom: 48px;
+  padding-bottom: 40px;
+  text-align: center
 }
 
 .section-title h2 {
-  color: var(--heading-color);
-  font-family: var(--heading-font);
-  font-size: clamp(34px, 4vw, 54px);
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-size: clamp(2rem, 5vw, 3.4rem);
   text-transform: none;
+  margin: 0 0 12px
 }
 
 .section-title h2::after {
-  background-color: #353c33;
+  display: none
 }
 
 .section-title p {
-  max-width: 720px;
-  margin: 18px auto 0;
-}
-
-
-/* 7. ABOUT SECTION
-   -------------------------------------------------- */
-
-.about {
-  background-color: var(--paw-olive);
-  color: var(--paw-ivory);
-}
-
-.about h3,
-.about h4,
-.about .content h3,
-.about .icon-box h4,
-.about .icon-box h4 a {
-  color: var(--paw-white);
-}
-
-.about .content p,
-.about .icon-box p {
-  color: var(--paw-ivory);
-}
-
-.about .content h3 {
-  font-size: clamp(32px, 3.5vw, 50px);
-}
-
-.about .icon-box {
-  padding: 15px;
-}
-
-.about .icon-box i {
-  color: var(--paw-tan);
-}
-
-.about .content .about-btn {
-  border-color: var(--paw-tan);
-  color: var(--paw-white);
-}
-
-.about .content .about-btn:hover {
-  background-color: var(--paw-tan);
-  color: var(--paw-olive);
-}
-
-
-/* 8. STATISTICS
-   -------------------------------------------------- */
-
-.stats {
-  background-color: var(--paw-white);
-}
-
-.stats .stats-item {
-  background-color: var(--paw-ivory);
-  border-radius: 22px;
-  padding: 30px 20px;
-  box-shadow: none;
-}
-
-.stats .stats-item span,
-.stats .stats-item p,
-.stats i {
-  color: var(--paw-olive);
-}
-
-
-/* 9. TABS
-   -------------------------------------------------- */
-
-.tabs {
-  background-color: var(--paw-white);
-}
-
-.tabs .nav-link {
-  border: 1px solid #D8D7CD;
-  border-radius: 16px;
-  transition: border-color 0.25s ease;
-}
-
-.tabs .nav-link:hover {
-  border-color: var(--paw-brown);
-}
-
-.tabs .nav-link.active {
-  background-color: var(--paw-sage);
-  border-color: var(--paw-sage);
-}
-
-.tabs .nav-link.active h4,
-.tabs .nav-link.active i {
-  color: var(--paw-olive);
-}
-
-.tabs .tab-content img {
-  border-radius: 24px;
-}
-
-
-/* 10. SERVICES
-   -------------------------------------------------- */
-
-.services {
-  background-color: var(--paw-coffee);
-}
-
-.services .section-title h2,
-.services .section-title p {
-  color: var(--paw-white);
-}
-
-.services .service-item {
-  background-color: var(--paw-ivory);
-  border: none;
-  border-radius: 22px;
-  padding: 36px;
-  min-height: 190px;
-  box-shadow: none;
-  transition: transform 0.3s ease,
-              box-shadow 0.3s ease;
-}
-
-.services .service-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16);
-}
-
-.services .service-item .title,
-.services .service-item .title a,
-.services .service-item .description {
-  color: var(--paw-olive);
-}
-
-.services .service-item .icon {
-  color: var(--paw-brown);
-}
-
-.services .service-item .title {
-  font-size: 25px;
-}
-
-
-/* 11. PORTFOLIO AND GALLERY
-   -------------------------------------------------- */
-
-.portfolio {
-  background-color: var(--paw-ivory);
-}
-
-.portfolio .portfolio-content {
-  border-radius: 22px;
-  overflow: hidden;
-}
-
-.portfolio .portfolio-content img {
-  width: 100%;
-  height: 290px;
-  object-fit: cover;
-}
-
-.portfolio .portfolio-info {
-  background-color: var(--paw-white);
-}
-
-.portfolio .portfolio-filters li {
-  font-weight: 600;
-}
-
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--paw-brown);
-}
-
-/* Gallery decorative dog */
-
-#portfolio .paw-gallery-doodle {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 35px;
-}
-
-#portfolio .paw-gallery-doodle img {
-  display: block;
-  width: 105px;
-  height: auto;
-}
-
-@media (max-width: 767px) {
-  #portfolio .paw-gallery-doodle img {
-    width: 70px;
-  }
-}
-
-
-/* 12. TESTIMONIALS
-   -------------------------------------------------- */
-
-.testimonials {
-  background-color: var(--paw-sage);
-}
-
-.testimonials .section-title h2,
-.testimonials .section-title p {
-  color: #ffffff;;
-}
-
-.testimonials .testimonial-item {
-  background-color: var(--paw-white);
-  border-radius: 24px;
-  padding: 36px;
-  box-shadow: 0 12px 35px rgba(52, 60, 50, 0.09);
-}
-
-.testimonials .testimonial-item h3,
-.testimonials .testimonial-item h4,
-.testimonials .testimonial-item p {
-  color: var(--paw-olive);
-}
-
-
-/* 13. FAQ
-   -------------------------------------------------- */
-
-.faq {
-  background-color: var(--paw-ivory);
-}
-
-.faq .faq-container .faq-item {
-  background-color: var(--paw-white);
-  border-radius: 16px;
-  padding: 22px 25px;
-  margin-bottom: 14px;
-}
-
-.faq .faq-container .faq-item.faq-active {
-  background-color: var(--paw-sage);
-}
-
-.faq .faq-container .faq-item.faq-active h3,
-.faq .faq-container .faq-item.faq-active p {
-  color: var(--paw-olive);
-}
-
-
-/* 14. CONTACT
-   -------------------------------------------------- */
-
-.contact {
-  background-color: var(--paw-white);
-}
-
-.contact .info-item,
-.contact .php-email-form {
-  background-color: var(--paw-ivory);
-  border-radius: 20px;
-}
-
-.contact .php-email-form button[type="submit"] {
-  background-color: var(--paw-brown);
-  color: var(--paw-white);
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background-color: var(--paw-coffee);
-}
-
-
-/* 15. FOOTER
-   -------------------------------------------------- */
-
-.footer {
-  background-color: var(--paw-olive);
-  color: var(--paw-ivory);
-}
-
-.footer h3,
-.footer h4,
-.footer p,
-.footer .sitename {
-  color: var(--paw-ivory);
-}
-
-.footer a {
-  color: var(--paw-ivory);
-}
-
-.footer a:hover {
-  color: var(--paw-tan);
-}
-
-
-/* 16. INNER PAGE HERO
-   -------------------------------------------------- */
-
-.paw-page-hero {
-  padding: 115px 0 100px;
-  background-color: var(--paw-olive);
-  color: var(--paw-white);
-  overflow: hidden;
-}
-
-.paw-page-hero h1 {
-  color: var(--paw-white);
-  font-size: clamp(46px, 6vw, 86px);
-  line-height: 1.05;
-  max-width: 780px;
-}
-
-.paw-page-hero p {
-  color: var(--paw-ivory);
-  font-size: 19px;
-  max-width: 630px;
-}
-
-.paw-page-hero img {
-  width: 100%;
-  max-height: 370px;
-  object-fit: cover;
-  border-radius: 28px;
-}
-
-.eyebrow {
-  font-family: var(--default-font);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 18px;
-}
-
-
-/* 17. INNER PAGE SECTIONS
-   -------------------------------------------------- */
-
-.paw-section {
-  padding: 100px 0;
-}
-
-.paw-section h2 {
-  font-size: clamp(34px, 4vw, 58px);
-}
-
-.paw-section--cream {
-  background-color: var(--paw-ivory);
-}
-
-.paw-section--white {
-  background-color: var(--paw-white);
-}
-
-.paw-section--blue {
-  background-color: var(--paw-sage);
-}
-
-.paw-section--burgundy {
-  background-color: var(--paw-coffee);
-  color: var(--paw-white);
-}
-
-.paw-section--burgundy h2,
-.paw-section--burgundy h3,
-.paw-section--burgundy p {
-  color: var(--paw-white);
-}
-
-
-/* 18. CARDS
-   -------------------------------------------------- */
-
-.paw-card {
-  height: 100%;
-  background-color: var(--paw-white);
-  border: 1px solid rgba(52, 60, 50, 0.12);
-  border-radius: 24px;
-  padding: 36px;
-  transition: transform 0.3s ease,
-              box-shadow 0.3s ease;
-}
-
-.paw-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 40px rgba(52, 60, 50, 0.10);
-}
-
-.paw-card h3 {
-  color: var(--paw-olive);
-  font-size: 28px;
-}
-
-.paw-card p {
-  color: var(--paw-coffee);
-}
-
-.paw-card .bi {
-  font-size: 34px;
-  color: var(--paw-brown);
-}
-
-
-/* 19. IMAGES
-   -------------------------------------------------- */
-
-.paw-photo,
-.paw-split-image {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 28px;
-}
-
-
-/* 20. BUTTONS
-   -------------------------------------------------- */
-
-.paw-primary {
-  display: inline-block;
-  background-color: var(--paw-brown);
-  color: var(--paw-white);
-  padding: 14px 28px;
-  border: 1px solid transparent;
-  border-radius: 50px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background-color 0.25s ease,
-              transform 0.25s ease;
-}
-
-.paw-primary:hover {
-  background-color: var(--paw-coffee);
-  color: var(--paw-white);
-  transform: translateY(-2px);
-}
-
-.paw-inverse {
-  background-color: var(--paw-ivory);
-  color: var(--paw-olive);
-}
-
-.paw-inverse:hover {
-  background-color: var(--paw-tan);
-  color: var(--paw-olive);
-}
-
-.paw-link {
+  max-width: 640px;
+  margin: 0 auto;
+  color: inherit;
+  opacity: .85
+}
+
+/* Buttons */
+.paw-primary-button,
+.paw-services-cta,
+.buy-btn,
+.php-email-form button[type=submit],
+.paw-nav-button {
   display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  color: var(--paw-brown);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.paw-link:hover {
-  color: var(--paw-coffee);
-}
-
-
-/* 21. FORMS
-   -------------------------------------------------- */
-
-.paw-form {
-  background-color: var(--paw-white);
-  padding: 40px;
-  border-radius: 26px;
-  box-shadow: 0 18px 50px rgba(52, 60, 50, 0.08);
-}
-
-.paw-form label {
-  color: var(--paw-olive);
-  font-weight: 700;
-  margin-bottom: 7px;
-}
-
-.paw-form .form-control,
-.paw-form .form-select {
-  border: 1px solid #A9AB9D;
-  border-radius: 12px;
-  padding: 13px 16px;
-  background-color: var(--paw-white);
-  color: var(--paw-olive);
-}
-
-.paw-form .form-control:focus,
-.paw-form .form-select:focus {
-  border-color: var(--paw-brown);
-  box-shadow: 0 0 0 3px rgba(118, 86, 66, 0.15);
-}
-
-
-/* 22. BLOG
-   -------------------------------------------------- */
-
-.paw-blog-card {
-  background-color: var(--paw-white);
-  border-radius: 24px;
-  overflow: hidden;
-  height: 100%;
-  transition: transform 0.3s ease;
-}
-
-.paw-blog-card:hover {
-  transform: translateY(-5px);
-}
-
-.paw-blog-card img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-.paw-blog-card .content {
-  padding: 30px;
-}
-
-.paw-blog-card h3 {
-  color: var(--paw-olive);
-  font-size: 27px;
-}
-
-.paw-blog-card p {
-  color: var(--paw-coffee);
-}
-
-
-/* 23. PAWLIDAYS REVIEWS
-   -------------------------------------------------- */
-
-.paw-reviews {
-  background-color: var(--paw-sage);
-  color: var(--paw-olive);
-}
-
-.paw-reviews h2 {
-  color: var(--paw-olive);
-}
-
-.paw-review-card {
-  background-color: var(--paw-white);
-  border-radius: 26px;
-  padding: 40px;
-  height: 100%;
-}
-
-.paw-review-card p {
-  color: var(--paw-olive);
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-
-/* 24. TABLET RESPONSIVE
-   -------------------------------------------------- */
-
-@media (max-width: 991px) {
-
-  section.section,
-  .paw-section {
-    padding-top: 75px;
-    padding-bottom: 75px;
-  }
-
-  .hero {
-    min-height: 600px;
-  }
-
-  .hero h2 {
-    font-size: clamp(44px, 6vw, 64px);
-  }
-
-  .header .logo .sitename {
-    font-size: 28px;
-  }
-
-  .paw-page-hero {
-    padding: 85px 0;
-  }
-
-}
-
-
-/* 25. MOBILE RESPONSIVE
-   -------------------------------------------------- */
-
-@media (max-width: 767px) {
-
-  section.section,
-  .paw-section {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-
-  .hero {
-    min-height: auto;
-    padding: 85px 0;
-  }
-
-  .hero h2 {
-    font-size: clamp(39px, 10vw, 52px);
-  }
-
-  .hero p {
-    font-size: 17px;
-  }
-
-  .section-title h2 {
-    font-size: 36px;
-  }
-
-  .paw-card,
-  .paw-review-card {
-    padding: 25px;
-  }
-
-  .paw-form {
-    padding: 24px;
-  }
-
-  .paw-photo,
-  .paw-split-image {
-    height: 290px;
-  }
-
-  .portfolio .portfolio-content img {
-    height: 250px;
-  }
-
-}
-
-
-/* 26. ACCESSIBILITY
-   -------------------------------------------------- */
-
-@media (prefers-reduced-motion: reduce) {
-
-  .paw-card,
-  .paw-primary,
-  .paw-blog-card,
-  .services .service-item {
-    transition: none;
-  }
-}
-
-/* PAWLIDAYS — HEADER & HERO FIX */
-
-#header.paw-header {
-  background: #FAF8F3;
-  padding: 18px 0;
-  border-bottom: 1px solid #e8e3d9;
-  box-shadow: none;
-}
-
-#header.paw-header .container-xl {
-  gap: 28px;
-}
-
-#header .paw-brand {
-  font-family: "DM Sans", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -1.5px;
-  color: #765642;
-}
-
-#header .paw-brand-dot {
-  color: #C99D76;
-}
-
-#header.paw-header .navmenu {
-  margin-right: 18px;
-}
-
-@media (min-width: 1200px) {
-  #header.paw-header .navmenu ul {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-  }
-
-  #header.paw-header .navmenu a {
-    padding: 8px 0;
-    font-size: 18px;
-    font-weight: 600;
-  }
-}
-
-#header .paw-nav-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 13px 22px;
-  border-radius: 40px;
-  background: #343C32;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-#header .paw-nav-button:hover {
-  background: #765642;
-  color: #fff;
-}
-
-/* HERO */
-
-#hero.paw-hero {
-  background: #F4F0E6;
-  min-height: auto;
-  padding: 110px 0 120px;
-  overflow: hidden;
-}
-
-#hero.paw-hero .paw-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #765642;
-}
-
-#hero.paw-hero .paw-eyebrow-line {
-  width: 30px;
-  height: 1px;
-  background: #765642;
-}
-
-#hero.paw-hero h1 {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(52px, 5.4vw, 82px);
-  font-weight: 500;
-  line-height: 1.08;
-  letter-spacing: -2.5px;
-  color: #343C32;
-  margin-bottom: 28px;
-}
-
-#hero.paw-hero h1 em {
-  color: #765642;
-  font-weight: 400;
-}
-
-#hero.paw-hero .paw-hero-description {
-  max-width: 490px;
-  font-size: 21px;
-  line-height: 1.85;
-  color: #594030;
-  margin-bottom: 32px;
-}
-
-#hero.paw-hero .paw-hero-actions {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-#hero.paw-hero .paw-primary-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 15px;
-  background: #E77D46;;
-  color: #fff;
-  border-radius: 50px;
-  padding: 16px 26px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-#hero.paw-hero .paw-secondary-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #343C32;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid #879078;
-  padding-bottom: 5px;
-}
-
-#hero.paw-hero .paw-hero-bottom {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 48px;
-  color: #765642;
-  font-size: 12px;
-}
-
-#hero.paw-hero .paw-hero-image-wrap {
-  position: relative;
-  max-width: 540px;
-  margin-left: auto;
-}
-
-#hero.paw-hero .paw-hero-image {
-  display: block;
-  width: 100%;
-  height: 580px;
-  object-fit: cover;
-  border-radius: 260px 260px 24px 24px;
-}
-
-#hero.paw-hero .paw-hero-sticker {
-  position: absolute;
-  left: -30px;
-  bottom: 65px;
-  width: 145px;
-  height: 145px;
-  border-radius: 50%;
-  background: #C99D76;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: #343C32;
-  transform: rotate(-12deg);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-#hero.paw-hero .paw-hero-caption {
-  position: absolute;
-  right: 15px;
-  bottom: 20px;
-  background: #FAF8F3;
-  border-radius: 30px;
-  padding: 13px 18px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #343C32;
-}
-
-@media (max-width: 991px) {
-  #hero.paw-hero {
-    padding: 70px 0;
-  }
-
-  #hero.paw-hero .paw-hero-image {
-    height: 450px;
-  }
-
-  #hero.paw-hero .paw-hero-sticker {
-    left: 0;
-  }
-}
-
-@media (max-width: 575px) {
-  #header .paw-brand {
-    font-size: 26px;
-  }
-
-  #header .paw-nav-button {
-    padding: 10px 13px;
-    font-size: 11px;
-  }
-
-  #hero.paw-hero h1 {
-    font-size: 46px;
-  }
-
-  #hero.paw-hero .paw-hero-image {
-    height: 370px;
-  }
-
-  #hero.paw-hero .paw-hero-sticker {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-/* PAWLIDAYS — TEAM PHOTOS */
-
-#team .team-member .member-img {
-  width: 100%;
-  height: 320px;
-  overflow: hidden;
-}
-
-#team .team-member .member-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 25%;
-  display: block;
-}
-
-/* PAWLIDAYS ABOUT ICONS */
-
-#about .icon-box i {
-  color: #C99D76 !important;
-  font-size: 34px;
-  line-height: 1;
-  display: inline-block;
-  margin-bottom: 18px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-#about .icon-box:hover i {
-  transform: translateY(-4px);
-  color: #E0B894 !important;
-}
-
-#about .icon-box h4,
-#about .icon-box h4 a {
-  color: #FAF8F3;
-}
-
-#about .icon-box:hover h4,
-#about .icon-box:hover h4 a {
-  color: #FAF8F3;
-}
-
-
-/* ====================================
-   PAWLIDAYS — SERVICES 
-   ==================================== */
-/* =====================================
-   PAWLIDAYS — SERVICES
-   ===================================== */
-
-#services.paw-services {
-  background: #343C32;
-  padding: 110px 0;
-  position: relative;
-}
-
-.paw-services-heading {
-  text-align: center;
-  margin-bottom: 55px;
-}
-
-.paw-services-label {
-  display: inline-block;
-  margin-bottom: 16px;
-  color: #D69D78;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-#services .paw-services-heading h2 {
-  font-family: "Manrope", sans-serif !important;
-  font-size: clamp(48px, 5vw, 72px);
-  color: #E8E3D7;
-  margin-bottom: 18px;
-  letter-spacing: -0.04em;
-}
-
-#services .paw-services-heading p {
-  max-width: 760px;
-  margin: 0 auto;
-  color: #F2EEE5;
-  font-size: 21px;
-  line-height: 1.6;
-}
-
-/* Service cards */
-
-.paw-service-card {
-  background: #F4F0E6;
-  border-radius: 28px;
-  overflow: hidden;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  min-height: 320px;
-  border: 1px solid rgba(255,255,255,0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.paw-service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 36px rgba(0,0,0,0.12);
-}
-
-.paw-service-image {
-  width: 50%;
-  min-height: 320px;
-  overflow: hidden;
-}
-
-.paw-service-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Text side */
-
-.paw-service-content {
-  width: 50%;
-  padding: 34px 32px 28px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.paw-service-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 26px;
-  color: #8C7A67;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1.6px;
-}
-
-#services .paw-service-content h3 {
-  font-family: "Manrope", sans-serif !important;
-  font-size: 28px;
-  line-height: 1.2;
-  font-weight: 700;
-  color: #2E362F;
-  margin-bottom: 18px;
-  letter-spacing: -0.03em;
-}
-
-#services .paw-service-content p {
-  font-size: 21px;
-  line-height: 1.6;
-  color: #5F564D;
-  margin-bottom: 30px;
-}
-
-.paw-service-link {
-  margin-top: auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  color: #8D5B3E;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-  transition: color 0.25s ease;
-}
-
-.paw-service-link:hover {
-  color: #E77D46;
-}
-
-.paw-service-link i {
-  font-size: 18px;
-}
-
-/* Footer CTA */
-
-.paw-services-footer {
-  margin-top: 50px;
-  padding-top: 36px;
-  border-top: 1px solid rgba(244, 240, 230, 0.14);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-}
-
-.paw-services-footer h3 {
-  font-family: "Manrope", sans-serif !important;
-  color: #F4F0E6;
-  font-size: 36px;
-  line-height: 1.2;
-  margin: 0;
-}
-
-.paw-services-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #E77D46;
-  color: #2E362F;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 16px 28px;
+  border: 0;
   border-radius: 999px;
-  min-width: 170px;
-  transition: all 0.25s ease;
+  padding: 15px 30px;
+  font: 700 15px/1 var(--default-font);
+  text-decoration: none;
+  cursor: pointer;
+  background: var(--paw-orange);
+  color: var(--paw-ink);
+  transition: transform .25s, background .25s, color .25s
 }
 
-.paw-services-cta:hover {
-  background: #F4F0E6;
-  color: #2E362F;
+.paw-primary-button:hover,
+.paw-services-cta:hover,
+.buy-btn:hover,
+.php-email-form button[type=submit]:hover {
+  background: var(--paw-olive);
+  color: #fff;
+  transform: translateY(-2px)
 }
 
-/* Responsive */
-
-@media (max-width: 991px) {
-  .paw-service-card {
-    flex-direction: column;
-    min-height: auto;
-  }
-
-  .paw-service-image,
-  .paw-service-content {
-    width: 100%;
-  }
-
-  .paw-service-image {
-    min-height: 260px;
-  }
-
-  .paw-service-content {
-    padding: 28px 24px 24px;
-  }
-
-  #services .paw-services-heading h2 {
-    font-size: 52px;
-  }
-
-  .paw-services-footer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.paw-nav-button {
+  background: var(--paw-olive);
+  color: var(--paw-ivory);
+  padding: 12px 24px;
+  margin-left: 24px
 }
 
-@media (max-width: 575px) {
-  #services.paw-services {
-    padding: 80px 0;
-  }
-
-  #services .paw-services-heading h2 {
-    font-size: 42px;
-  }
-
-  #services .paw-services-heading p,
-  #services .paw-service-content p {
-    font-size: 19px;
-  }
-
-  #services .paw-service-content h3 {
-    font-size: 24px;
-  }
-
-  .paw-services-footer h3 {
-    font-size: 30px;
-  }
+.paw-nav-button:hover {
+  background: var(--paw-orange);
+  color: var(--paw-ink)
 }
 
-/* ==================================
-   PAWLIDAYS — INSIDE SECTION
-   ================================== */
-
-#inside-pawlidays {
-  background: #F4F0E6;
-  padding: 110px 0;
-  overflow: hidden;
-}
-
-.paw-inside-label,
-.paw-inside-small {
-  display: block;
-  color: #765642;
-  font-family: "DM Sans", sans-serif;
-  font-size: 11px;
+.paw-secondary-link {
+  color: var(--paw-olive);
   font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: var(--paw-orange);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px
 }
 
-#inside-pawlidays h2 {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(40px, 4.5vw, 64px);
-  font-weight: 500;
-  letter-spacing: -2px;
-  line-height: 1.13;
-  color: #343C32;
-  max-width: 720px;
-  margin: 0;
+.paw-secondary-link::after {
+  content: " →"
 }
 
-#inside-pawlidays h2 em,
-#inside-pawlidays h3 em {
-  color: #765642;
-  font-weight: 400;
+/* Header */
+.paw-header {
+  background: var(--paw-ivory);
+  padding: 14px 0;
+  box-shadow: 0 1px 0 rgba(52, 60, 50, .1)
 }
 
-.paw-inside-intro {
-  font-size: 15px;
-  line-height: 1.9;
-  color: #594F46;
-  margin-bottom: 0;
+.paw-brand {
+  font: 700 26px/1 "Poppins", sans-serif;
+  letter-spacing: -.04em;
+  color: var(--paw-olive)
+}
+
+.paw-brand-dot {
+  color: var(--paw-orange)
+}
+
+.logo:hover .paw-brand {
+  color: var(--paw-olive)
+}
+
+.mobile-nav-toggle {
+  background: none;
+  border: 0;
+  padding: 6px;
+  color: var(--paw-olive);
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer
+}
+
+@media(min-width:1200px) {
+  .navmenu a {
+    font: 500 15px var(--nav-font);
+    padding: 12px 14px;
+    position: relative
+  }
+
+  .navmenu a::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 6px;
+    height: 2px;
+    background: var(--paw-orange);
+    transform: scaleX(0);
+    transition: transform .25s
+  }
+
+  .navmenu a:hover::after,
+  .navmenu a.active::after {
+    transform: scaleX(1)
+  }
+
+  .navmenu .d-xl-none {
+    display: none
+  }
+}
+
+@media(max-width:1199px) {
+  .paw-nav-button {
+    display: none
+  }
+
+  .navmenu ul {
+    inset: 72px 16px auto 16px !important;
+    padding: 12px !important;
+    border-radius: 24px !important;
+    background: var(--paw-ivory) !important
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    font: 600 19px var(--heading-font);
+    padding: 15px 16px;
+    border-bottom: 1px solid rgba(52, 60, 50, .1)
+  }
+
+  .navmenu li:last-child a {
+    border: 0;
+    margin-top: 8px;
+    justify-content: center;
+    background: var(--paw-orange);
+    color: var(--paw-ink);
+    border-radius: 999px;
+    font: 700 16px var(--default-font)
+  }
+
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #fff;
+    top: 14px;
+    right: 16px
+  }
+}
+
+/* Hero */
+.paw-hero {
+  padding: 48px 0 72px;
+  overflow: hidden;
+  position: relative;
+  background: radial-gradient(55% 55% at 90% 15%, rgba(135, 144, 120, .30), transparent 70%), radial-gradient(40% 40% at 0% 100%, rgba(231, 125, 70, .16), transparent 70%)
+}
+
+.paw-hero h1 {
+  font-size: clamp(2.7rem, 9vw, 5.6rem);
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  margin-bottom: 22px
+}
+
+.paw-hero-description {
+  font-size: 1.12rem;
+  max-width: 30em;
+  color: var(--paw-coffee)
+}
+
+.paw-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 28px;
+  margin-top: 30px
+}
+
+.paw-hero-image-wrap {
+  position: relative;
+  max-width: 520px;
+  margin-inline: auto;
+  padding: 0 14px 18px 0
+}
+
+.paw-hero-image-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 18px 0 0 18px;
+  background: var(--paw-sage);
+  border-radius: 999px 999px 36px 36px;
+  transform: rotate(3deg);
+  opacity: .55
+}
+
+.paw-hero-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: 50% 40%;
+  border-radius: 999px 999px 36px 36px;
+  box-shadow: 0 30px 60px -25px rgba(52, 60, 50, .45)
+}
+
+.paw-hero-badge {
+  position: absolute;
+  left: -6px;
+  bottom: 44px;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: var(--paw-orange);
+  color: var(--paw-ink);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font: italic 600 1.2rem/1.05 var(--heading-font);
+  transform: rotate(-10deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
+  z-index: 2
+}
+
+@media(max-width:575px) {
+  .paw-hero-badge {
+    width: 92px;
+    height: 92px;
+    font-size: 1rem;
+    left: 0
+  }
+}
+
+.paw-marquee {
+  background: var(--paw-olive);
+  color: var(--paw-ivory);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 16px 0;
+  border-block: 0
+}
+
+.paw-marquee-track {
+  display: inline-flex;
+  gap: 28px;
+  animation: paw-scroll 32s linear infinite;
+  font: italic 500 1.35rem var(--heading-font)
+}
+
+.paw-marquee-track i {
+  color: var(--paw-orange);
+  font-style: normal
+}
+
+@keyframes paw-scroll {
+  to {
+    transform: translateX(-50%)
+  }
+}
+
+/* About */
+.paw-inside h2 {
+  font-size: clamp(2rem, 5.5vw, 3.8rem);
+  margin-bottom: 8px
 }
 
 .paw-inside-image {
-  position: relative;
+  position: relative
 }
 
 .paw-inside-image img {
-  display: block;
   width: 100%;
-  height: 510px;
+  aspect-ratio: 4/3;
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: 32px;
+  display: block
 }
 
 .paw-inside-sticker {
   position: absolute;
-  right: -20px;
-  bottom: -25px;
-  width: 145px;
-  height: 145px;
-  background: #879078;
-  border: 7px solid #F4F0E6;
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transform: rotate(10deg);
+  right: 14px;
+  bottom: -22px;
+  background: var(--paw-olive);
+  color: var(--paw-ivory);
+  border-radius: 20px;
+  padding: 14px 20px;
+  font: 700 11px/1.3 var(--default-font);
+  letter-spacing: .14em;
+  transform: rotate(3deg)
 }
 
 .paw-inside-sticker span {
-  font-size: 17px;
+  display: block;
+  font: italic 600 1.15rem var(--heading-font);
   letter-spacing: 0;
-  margin-top: 5px;
+  color: var(--paw-orange)
 }
 
-.paw-inside-content {
-  padding-left: 15px;
+.paw-inside-content h3 {
+  font-size: 1.9rem;
+  margin-bottom: 14px
 }
-
-#inside-pawlidays h3 {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: clamp(32px, 3vw, 45px);
-  font-weight: 500;
-  color: #343C32;
-  line-height: 1.2;
-  margin-bottom: 25px;
-}
-
-.paw-inside-content p {
-  color: #594F46;
-  font-size: 21px;
-  line-height: 1.9;
-  margin-bottom: 18px;
-}
-
-.paw-inside-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  color: #765642;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid #765642;
-  padding-bottom: 8px;
-  margin-top: 15px;
-}
-
-.paw-inside-link:hover {
-  color: #343C32;
-}
-
-/* Values row */
 
 .paw-inside-values {
-  margin-top: 80px;
+  margin-top: 36px
 }
 
 .paw-inside-value {
   display: flex;
+  gap: 16px;
   align-items: flex-start;
-  gap: 18px;
-  background: #FAF8F3;
-  padding: 30px;
-  border-radius: 18px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 26px;
   height: 100%;
-  transition: transform 0.3s ease;
+  transition: transform .3s, box-shadow .3s
 }
 
 .paw-inside-value:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -20px rgba(52, 60, 50, .35)
 }
 
-.paw-inside-value > i {
-  font-size: 27px;
-  color: #765642;
-  flex-shrink: 0;
+.paw-inside-value>i {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(135, 144, 120, .25);
+  color: var(--paw-olive);
+  font-size: 22px
 }
 
-#inside-pawlidays .paw-inside-value h4 {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 21px;
-  color: #343C32;
-  margin-bottom: 10px;
+.paw-inside-value h4 {
+  font-size: 1.2rem;
+  margin: 0 0 4px
 }
 
 .paw-inside-value p {
-  font-size: 21px;
-  color: #594F46;
-  line-height: 1.7;
   margin: 0;
+  font-size: .95rem
 }
 
-/* Responsive */
+/* Services */
+.paw-services {
+  background: var(--paw-olive);
+  color: var(--paw-ivory)
+}
 
-@media (max-width: 991px) {
-  #inside-pawlidays {
-    padding: 75px 0;
-  }
+.paw-services-heading {
+  text-align: center;
+  margin-bottom: 40px
+}
 
-  .paw-inside-image img {
-    height: 430px;
-  }
+.paw-services-heading h2 {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.4rem)
+}
 
-  .paw-inside-content {
-    padding-left: 0;
-  }
+.paw-services-heading p {
+  max-width: 560px;
+  margin: 12px auto 0;
+  color: #DAD6C8
+}
 
-  .paw-inside-values {
-    margin-top: 55px;
+.paw-service-card {
+  background: var(--paw-cream);
+  border-radius: 32px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform .35s
+}
+
+.paw-service-card:hover {
+  transform: translateY(-6px)
+}
+
+.paw-service-image {
+  overflow: hidden
+}
+
+.paw-service-image img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s
+}
+
+.paw-service-card:hover img {
+  transform: scale(1.05)
+}
+
+.paw-service-content {
+  padding: 26px 28px 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: var(--default-color)
+}
+
+.paw-service-content h3 {
+  font-size: 1.65rem
+}
+
+.paw-service-content p {
+  flex: 1
+}
+
+.paw-service-link {
+  font-weight: 700;
+  color: var(--paw-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--paw-orange);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  align-self: flex-start
+}
+
+.paw-service-link::after {
+  content: " →"
+}
+
+.paw-services-footer {
+  margin-top: 40px;
+  background: var(--paw-orange);
+  border-radius: 32px;
+  padding: 28px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px
+}
+
+.paw-services-footer h3 {
+  margin: 0;
+  color: var(--paw-ink);
+  font-size: clamp(1.4rem, 3vw, 2rem)
+}
+
+.paw-services-footer .paw-services-cta {
+  background: var(--paw-olive);
+  color: #fff
+}
+
+.paw-services-footer .paw-services-cta:hover {
+  background: #fff;
+  color: var(--paw-ink)
+}
+
+/* Gallery */
+.paw-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px
+}
+
+.paw-filters button {
+  border: 1.5px solid var(--paw-olive);
+  background: transparent;
+  color: var(--paw-olive);
+  padding: 9px 20px;
+  border-radius: 999px;
+  font: 600 14px var(--default-font);
+  cursor: pointer;
+  transition: .2s
+}
+
+.paw-filters button:hover {
+  background: rgba(52, 60, 50, .08)
+}
+
+.paw-filters button.is-active {
+  background: var(--paw-olive);
+  color: #fff
+}
+
+.paw-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px
+}
+
+@media(min-width:768px) {
+  .paw-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px
   }
 }
 
-@media (max-width: 575px) {
-  #inside-pawlidays {
-    padding: 60px 0;
-  }
+.paw-gallery [hidden] {
+  display: none !important
+}
 
-  .paw-inside-image img {
-    height: 320px;
-  }
+.paw-gallery a {
+  position: relative;
+  display: block;
+  border-radius: 22px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  background: #e5dfd0
+}
 
-  .paw-inside-sticker {
-    width: 110px;
-    height: 110px;
-    right: 0;
-    bottom: -15px;
-    font-size: 9px;
-  }
+.paw-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s
+}
 
-  .paw-inside-sticker span {
-    font-size: 13px;
-  }
+.paw-gallery a:hover img {
+  transform: scale(1.07)
+}
 
-  .paw-inside-values {
-    margin-top: 45px;
+.paw-gallery span {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 34px 16px 14px;
+  color: #fff;
+  font: italic 600 1.05rem var(--heading-font);
+  background: linear-gradient(transparent, rgba(36, 41, 34, .78))
+}
+
+/* Testimonials */
+.testimonials {
+  background: var(--paw-sage)
+}
+
+.testimonials .section-title h2,
+.testimonials .section-title p {
+  color:#ffffff;
+}
+
+.testimonials .swiper-slide {
+  height: auto
+}
+
+.testimonial-item {
+  background: var(--paw-cream);
+  border-radius: 28px;
+  padding: 30px;
+  height: 100%;
+  text-align: left;
+  box-shadow: none
+}
+
+.testimonial-item h3 {
+  font: 700 1rem var(--default-font);
+  margin: 12px 0 4px;
+  letter-spacing: 0
+}
+
+.testimonial-item .stars i {
+  color: var(--paw-orange)
+}
+
+.testimonial-item p {
+  margin: 12px 0 0;
+  font-size: 1rem
+}
+
+.t-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--paw-olive);
+  color: var(--paw-orange);
+  display: grid;
+  place-items: center;
+  font-size: 24px
+}
+
+.testimonials .swiper-pagination {
+  position: static;
+  margin-top: 28px
+}
+
+.testimonials .swiper-pagination-bullet {
+  background: var(--paw-ink);
+  opacity: .35;
+  width: 10px;
+  height: 10px
+}
+
+.testimonials .swiper-pagination-bullet-active {
+  opacity: 1
+}
+
+/* Pricing */
+.pricing-item {
+  background: #fff;
+  border: 1px solid rgba(52, 60, 50, .12);
+  border-radius: 28px;
+  padding: 34px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none
+}
+
+.pricing-item h3 {
+  font-size: 1.5rem
+}
+
+.pricing-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 26px;
+  flex: 1
+}
+
+.pricing-item li {
+  padding: 6px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center
+}
+
+.pricing-item li i {
+  color: var(--paw-rust);
+  font-size: 1.2rem
+}
+
+.pricing-item.featured {
+  background: var(--paw-olive);
+  color: #EDE8DA;
+  border-color: var(--paw-olive)
+}
+
+.pricing-item.featured h3 {
+  color: #fff
+}
+
+.pricing-item.featured li i {
+  color: var(--paw-orange)
+}
+
+.pricing-item .buy-btn {
+  align-self: flex-start
+}
+
+/* FAQ */
+.faq .faq-container .faq-item {
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  padding: 22px 60px 22px 26px;
+  margin-bottom: 12px;
+  position: relative
+}
+
+.faq .faq-container .faq-item h3 {
+  font: 600 1.1rem/1.35 var(--heading-font);
+  margin: 0;
+  cursor: pointer
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  color: var(--paw-rust);
+  transition: transform .3s;
+  cursor: pointer
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg)
+}
+
+.faq .faq-container .faq-active h3 {
+  color: var(--paw-rust)
+}
+
+/* Team */
+.team .team-member {
+  background: var(--surface-color);
+  border-radius: 28px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: none
+}
+
+.team .team-member .member-img img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: 50% 25%
+}
+
+.team .team-member .member-info {
+  padding: 20px 22px 24px;
+  text-align: left
+}
+
+.team .team-member h4 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0 0 4px
+}
+
+.team .team-member span {
+  color: var(--paw-tan);
+  font-size: .95rem
+}
+
+/* Contact */
+.contact .info-item {
+  background: #fff;
+  border-radius: 24px;
+  padding: 28px 20px;
+  height: 100%;
+  box-shadow: none;
+  border: 0;
+  text-align: center
+}
+
+.contact .info-item i {
+  color: var(--paw-rust);
+  background: rgba(231, 125, 70, .15);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 24px
+}
+
+.contact .info-item h3 {
+  font-size: 1.2rem;
+  margin: 14px 0 4px
+}
+
+.contact .info-item p {
+  margin: 0
+}
+
+.php-email-form {
+  background: #fff;
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: none;
+  height: 100%
+}
+
+.php-email-form .form-control,
+.php-email-form .form-select {
+  border: 1.5px solid #d8d3c3;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 16px;
+  background-color: var(--paw-cream);
+  box-shadow: none
+}
+
+.php-email-form .form-control:focus,
+.php-email-form .form-select:focus {
+  border-color: var(--paw-orange);
+  box-shadow: 0 0 0 4px rgba(231, 125, 70, .2)
+}
+
+.php-email-form button[type=submit] {
+  width: 100%
+}
+
+.visually-hidden-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0)
+}
+
+/* Footer */
+.footer {
+  background: var(--paw-olive);
+  color: #DAD6C8;
+  font-size: 15px
+}
+
+.footer h4 {
+  color: #fff;
+  font-size: 1.15rem
+}
+
+.footer a {
+  color: #DAD6C8
+}
+
+.footer a:hover {
+  color: var(--paw-orange)
+}
+
+.footer .paw-brand {
+  color: #fff;
+  font-size: 30px
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0
+}
+
+.footer .footer-links li {
+  padding: 5px 0
+}
+
+.footer .newsletter-form {
+  display: flex;
+  background: #fff;
+  border-radius: 999px;
+  padding: 5px;
+  max-width: 420px
+}
+
+.footer .newsletter-form input[type=email] {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: none;
+  padding: 10px 16px;
+  outline: 0
+}
+
+.footer .newsletter-form input[type=submit] {
+  border: 0;
+  border-radius: 999px;
+  background: var(--paw-orange);
+  color: var(--paw-ink);
+  font-weight: 700;
+  padding: 10px 22px
+}
+
+.footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  padding-top: 22px
+}
+
+.footer .credits {
+  font-size: 12px;
+  opacity: .7;
+  margin-top: 6px
+}
+
+.scroll-top {
+  background: var(--paw-orange)
+}
+
+.scroll-top i {
+  color: var(--paw-ink)
+}
+
+/* Inner pages */
+.page-title.dark-background {
+  background: var(--paw-olive);
+  padding: 56px 0 48px;
+  text-align: left
+}
+
+.page-title h1 {
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  color: #fff
+}
+
+.service-details .service-box,
+.blog-posts article,
+.widget-item {
+  border-radius: 24px;
+  box-shadow: none
+}
+
+.service-details h3 {
+  font-size: 1.8rem
+}
+
+.service-details .services-img {
+  border-radius: 28px;
+  margin-bottom: 24px
+}
+
+.sd-block {
+  scroll-margin-top: 90px;
+  margin-bottom: 44px
+}
+
+.sd-block img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 28px;
+  margin-bottom: 20px
+}
+
+@media(prefers-reduced-motion:reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important
   }
 }
 
-/* Main text */
-body,
+/* fixes after visual QA */
+.section-bg:before {
+  display: none
+}
+
+.team.section-bg {
+  background: var(--paw-olive)
+}
+
+.pricing .pricing-item .buy-btn {
+  background: var(--paw-orange);
+  color: var(--paw-ink);
+  border: 0;
+  border-radius: 999px;
+  padding: 15px 30px;
+  font: 700 15px/1 var(--default-font);
+  text-transform: none;
+  display: inline-flex
+}
+
+.pricing .pricing-item .buy-btn:hover {
+  background: var(--paw-olive);
+  color: #fff
+}
+
+.pricing .pricing-item.featured .buy-btn:hover {
+  background: #fff;
+  color: var(--paw-ink)
+}
+
+.pricing .pricing-item h3,
+.pricing .pricing-item p {
+  text-align: left
+}
+
+.footer .php-email-form {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  height: auto
+}
+
+.footer .newsletter-form {
+  box-shadow: none;
+  border: 0
+}
+
+.footer .newsletter-form input[type=email] {
+  color: var(--paw-ink)
+}
+
+@media(min-width:768px) {
+  .paw-gallery {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media(min-width:992px) {
+  .paw-gallery {
+    grid-template-columns: repeat(4, 1fr)
+  }
+}
+
+.breadcrumbs a {
+  color: var(--paw-tan)
+}
+
+.breadcrumbs a:hover {
+  color: #fff
+}
+
+.service-details p,
+.service-details li {
+  font-size: 1rem
+}
+
+.service-details .services-list a.active {
+  background: var(--paw-brown);
+  color: #fff
+}
+
+/* ---- Poppins only, no italics, 21px text ---- */
+* {
+  font-style: normal !important
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  letter-spacing: -.025em;
+  line-height: 1.15
+}
+
+.paw-hero h1 {
+  font-size: clamp(2.3rem, 7.6vw, 5rem);
+  letter-spacing: -.04em;
+  line-height: 1.05
+}
+
+.section-title h2,
+.paw-services-heading h2,
+.paw-inside h2 {
+  font-size: clamp(1.9rem, 4.6vw, 3.2rem)
+}
+
+.paw-service-content h3 {
+  font-size: clamp(1.35rem, 2.4vw, 1.7rem)
+}
+
+.paw-inside-content h3 {
+  font-size: clamp(1.5rem, 3vw, 1.9rem)
+}
+
+.paw-hero-badge,
+.paw-marquee-track,
+.paw-inside-sticker span,
+.paw-gallery span {
+  font-weight: 600
+}
+
+.paw-marquee-track {
+  font-size: 1.15rem
+}
+
+.paw-hero-badge {
+  font-size: 1.05rem;
+  line-height: 1.1
+}
+
+/* paragraphs, lists and buttons at --paw-text */
 p,
 li,
-input,
-textarea,
-select,
-button,
-label,
-small {
-  font-family: "Poppins", sans-serif !important;
+.paw-hero-description,
+.paw-inside-value p,
+.testimonial-item p,
+.service-details p,
+.service-details li,
+.faq-content p,
+.contact .info-item p,
+.paw-services-heading p,
+.section-title p {
+  font-size: var(--paw-text)
 }
 
-/* All headings */
-h1, h2, h3, h4, h5, h6,
-.section-title h2,
-#hero h1,
-#about h2,
-#services h2,
-#services h3,
-#team h2,
-#team h4,
-#inside-pawlidays h2,
-#inside-pawlidays h3,
-#faq h2,
-#contact h2 {
-  font-family: "Poppins", sans-serif !important;
-  font-weight: 400;
+.paw-hero-description {
+  max-width: 32em
 }
 
-/* Navigation and buttons */
-.navmenu a,
-.paw-nav-button,
 .paw-primary-button,
-.paw-secondary-link,
-.paw-service-bottom,
 .paw-services-cta,
-.paw-inside-link,
-.btn,
-.btn-get-started {
-  font-family:  "Poppins", sans-serif !important;
+.buy-btn,
+.pricing .pricing-item .buy-btn,
+.php-email-form button[type=submit],
+.paw-nav-button,
+.paw-secondary-link,
+.paw-service-link,
+.footer .newsletter-form input[type=submit],
+.paw-filters button {
+  font-size: var(--paw-text);
+  font-weight: 500;
+  line-height: 1.2
 }
 
-/* Brand logo */
-#header .paw-brand {
-  font-family: "Poppins", sans-serif !important;
-  font-size: 34px;
-  font-weight: 700;
-  letter-spacing: -1.8px;
+.paw-primary-button,
+.paw-services-cta,
+.buy-btn,
+.pricing .pricing-item .buy-btn,
+.php-email-form button[type=submit] {
+  padding: .7em 1.5em
 }
 
-/* Small labels */
-.paw-kicker,
-.paw-eyebrow,
-.paw-services-eyebrow,
-.paw-inside-label,
-.paw-inside-small,
-.paw-service-top span {
-  font-family: "Poppins", sans-serif !important;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+.paw-nav-button {
+  padding: .55em 1.2em;
+  font-size: 17px
 }
 
-/* Decorative dogs */
-
-#hero {
-  position: relative;
-  overflow: hidden;
+.paw-filters button {
+  padding: .4em 1em;
+  font-size: max(16px, calc(var(--paw-text) - 3px))
 }
 
-#hero .paw-decorations {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
+.php-email-form .form-control,
+.php-email-form .form-select {
+  font-size: var(--paw-text)
 }
 
-#hero .container {
-  position: relative;
-  z-index: 1;
+.faq .faq-container .faq-item h3 {
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  font-weight: 600
 }
 
-.paw-doodle {
-  position: absolute;
-  width: 125px;
-  height: auto;
-  opacity: 0.9;
+.team .team-member h4 {
+  font-size: 1.3rem
 }
 
-.paw-doodle-top {
-  top: 35px;
-  left: 2%;
-  transform: rotate(-12deg);
+.team .team-member span,
+.footer,
+.footer p,
+.footer li {
+  font-size: max(16px, calc(var(--paw-text) - 3px))
 }
 
-.paw-doodle-bottom {
-  bottom: 25px;
-  right: 2%;
-  transform: rotate(8deg);
+.footer .newsletter-form input[type=email] {
+  font-size: 16px
 }
 
-@media (max-width: 768px) {
-  .paw-doodle {
-    width: 65px;
-    opacity: 0.6;
+.testimonial-item h3,
+.contact .info-item h3 {
+  font-size: 1.15rem
+}
+
+.paw-brand {
+  font-weight: 700
+}
+
+.paw-services-footer h3 {
+  font-size: clamp(1.3rem, 3vw, 1.9rem)
+}
+
+@media(min-width:1200px) {
+  .navmenu a {
+    font-size: 16px
   }
 }
 
-/* ======================================
-   PAWLIDAYS — DECORATIVE DOG MASCOTS
-   ====================================== */
+@media(max-width:1199px) {
 
-/* Containers for positioning */
+  .navmenu a,
+  .navmenu a:focus {
+    font: 500 clamp(17px, 4.6vw, 20px) var(--heading-font)
+  }
 
-#inside-pawlidays,
-#services,
-#team,
-#faq,
-#footer,
-.paw-blog-main {
-  position: relative;
-}
-
-/* Common doodle styling */
-
-.paw-mascot {
-  position: absolute;
-  width: 90px;
-  height: auto;
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* Keep content above decoration */
-
-#inside-pawlidays > .container,
-#services > .container,
-#team > .container,
-#faq > .container,
-#footer > .container,
-.paw-blog-main > .container {
-  position: relative;
-  z-index: 2;
-}
-
-/* 1. Inside Pawlidays */
-
-.paw-mascot-inside {
-  right: 2%;
-  bottom: 20px;
-  width: 85px;
-}
-
-/* 3. Team */
-
-.paw-mascot-team {
-  left: 3%;
-  top: 60px;
-  width: 85px;
-}
-
-/* 4. FAQ */
-
-.paw-mascot-faq {
-  right: 3%;
-  bottom: 25px;
-  width: 100px;
-}
-
-/* 5. Footer */
-
-.paw-mascot-footer {
-  right: 2%;
-  bottom: 16px;
-  width: 75px;
-}
-
-/* 6. Blog */
-
-.paw-mascot-blog {
-  top: 115px;
-  right: 4%;
-  width: 95px;
-}
-
-/* Tablet */
-
-@media (max-width: 1199px) {
-  .paw-mascot {
-    width: 65px;
+  .navmenu li:last-child a {
+    font: 600 clamp(17px, 4.6vw, 20px) var(--default-font)
   }
 }
 
-/* Mobile */
-
-@media (max-width: 767px) {
-  .paw-mascot {
-    width: 48px;
+/* tablet: keep cards roomy */
+@media(min-width:576px) and (max-width:991px) {
+  .paw-hero-image-wrap {
+    max-width: 440px
   }
 
-  /* Hide where they might overlap content */
-  .paw-mascot-inside,
-  .paw-mascot-team,
-  .paw-mascot-blog {
-    display: none;
-  }
-.paw-mascot-services {
-  display: block;
-  width: 55px;
-  left: 12px;
-  bottom: 12px;
-}
-  .paw-mascot-faq {
-    right: 12px;
-    bottom: 12px;
+  .paw-inside-value {
+    padding: 22px
   }
 
-  .paw-mascot-footer {
-    right: 12px;
-    bottom: 12px;
+  .php-email-form {
+    padding: 26px
   }
 }
 
-/* =========================================
-   PAWLIDAYS HERO — LAYOUT FIX
-   ========================================= */
-
-#hero.paw-hero {
-  position: relative;
-  background: #F4F0E6;
-  padding: 110px 0 120px;
-  min-height: auto;
-  overflow: hidden;
-  display: block;
-}
-
-#hero.paw-hero > .container {
-  position: relative;
-  z-index: 2;
-  max-width: 1320px;
-  width: 100%;
-}
-
-#hero .paw-hero-content {
-  width: 100%;
-  max-width: 590px;
-}
-
-#hero .paw-hero-eyebrow {
-  display: block;
-  font-family: "Poppins", sans-serif !important;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-  color: #765642;
-  margin-bottom: 25px;
-}
-
-#hero.paw-hero h1 {
-  font-family: "Poppins", sans-serif !important;
-  font-size: clamp(46px, 4.8vw, 76px);
-  font-weight: 400;
-  line-height: 1.12;
-  letter-spacing: -2.5px;
-  color: #343C32;
-  max-width: none;
-  width: 100%;
-  margin: 0 0 28px;
-}
-
-#hero.paw-hero h1 em {
-  font-weight: 400;
-  color: #765642;
-}
-
-#hero .paw-hero-description {
-  font-family:  "Poppins", sans-serif !important;
-  font-size: 16px;
-  line-height: 1.85;
-  color: #594F46;
-  max-width: 480px;
-  margin: 0 0 32px;
-}
-
-#hero .paw-hero-actions {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 22px;
-}
-
-#hero .paw-primary-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: #343C32;
-  color: #fff;
-  padding: 16px 26px;
-  border-radius: 50px;
-  font-family:  "Poppins", sans-serif !important;
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-#hero .paw-primary-button:hover {
-  background: #765642;
-  color: #fff;
-}
-
-#hero .paw-secondary-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-family:  "Poppins", sans-serif !important;
-  font-size: 13px;
-  font-weight: 600;
-  color: #343C32;
-  text-decoration: none;
-  border-bottom: 1px solid #879078;
-  padding-bottom: 5px;
-}
-
-#hero .paw-hero-image-wrap {
-  position: relative;
-  width: 100%;
-  max-width: 520px;
-  margin-left: auto;
-}
-
-#hero .paw-hero-image {
-  display: block;
-  width: 100%;
-  height: 560px;
-  object-fit: cover;
-  border-radius: 260px 260px 24px 24px;
-}
-
-#hero .paw-hero-sticker {
-  position: absolute;
-  left: -35px;
-  bottom: 55px;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: #C99D76;
-  color: #343C32;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  font-size: 11px;
-  font-weight: 700;
-  text-align: center;
-  transform: rotate(-12deg);
-}
-
-#hero .paw-hero-sticker i {
-  font-size: 15px;
-}
-
-/* Decorative dogs */
-#hero .paw-decorations {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-
-#hero .paw-doodle {
-  position: absolute;
-  width: 100px;
-  height: auto;
-}
-
-#hero .paw-doodle-top {
-  top: 30px;
-  left: 3%;
-}
-
-#hero .paw-doodle-bottom {
-  bottom: 25px;
-  right: 3%;
-}
-
-/* Tablet */
-@media (max-width: 991px) {
-  #hero.paw-hero {
-    padding: 75px 0;
+@media(max-width:575px) {
+  .paw-service-content {
+    padding: 22px 22px 26px
   }
 
-  #hero .paw-hero-image-wrap {
-    margin: 0 auto;
+  .paw-services-footer {
+    padding: 24px
   }
 
-  #hero .paw-hero-image {
-    height: 470px;
+  .paw-services-footer .paw-services-cta {
+    width: 100%
+  }
+
+  .paw-hero-actions .paw-primary-button {
+    width: 100%
+  }
+
+  .pricing-item {
+    padding: 28px 24px
+  }
+
+  .pricing .pricing-item .buy-btn {
+    width: 100%
   }
 }
 
-/* Mobile */
-@media (max-width: 575px) {
-  #hero.paw-hero {
-    padding: 60px 0 80px;
+.faq .faq-container .faq-item h3 {
+  font-size: var(--paw-text)
+}
+
+.php-email-form select.form-select {
+  text-overflow: ellipsis
+}
+
+@media(max-width:991px) {
+  .paw-inside-values>[class*=col-] {
+    flex: 0 0 100%;
+    max-width: 100%
   }
 
-  #hero.paw-hero h1 {
-    font-size: 46px;
-    letter-spacing: -1.5px;
-  }
-
-  #hero .paw-hero-description {
-    font-size: 15px;
-  }
-
-  #hero .paw-hero-actions {
-    gap: 18px;
-  }
-
-  #hero .paw-hero-image {
-    height: 390px;
-  }
-
-  #hero .paw-hero-sticker {
-    left: -5px;
-    width: 95px;
-    height: 95px;
-    font-size: 9px;
-  }
-
-  #hero .paw-doodle {
-    width: 65px;
+  .paw-pricing .row>[class*=col-] {
+    flex: 0 0 100%;
+    max-width: 560px;
+    margin-inline: auto
   }
 }
-
-/* =====================================
-   PAWLIDAYS — TYPOGRAPHY & BUTTONS
-   ===================================== */
-
-:root {
-  --default-font:  "Poppins", sans-serif !important;
-  --heading-font:  "Poppins", sans-serif !important;
-  --nav-font:  "Poppins", sans-serif !important;
-
-  --paw-orange: #E77D46;
-  --paw-green: #343C32;
-  --paw-cream: #F4F0E6;
-  --paw-brown: #765642;
-}
-
-/* Unified sans-serif headings */
-
-h1, h2, h3, h4, h5, h6,
-.section-title h2,
-#hero.paw-hero h1,
-#services .paw-services-heading h2,
-#services .paw-service-box h3,
-#inside-pawlidays h2,
-#inside-pawlidays h3,
-#inside-pawlidays .paw-inside-value h4,
-#pricing h2,
-#pricing h3,
-#pricing h4,
-#faq h2,
-#faq h3,
-#team h2,
-#team h4 {
-  font-family: "Poppins", sans-serif !important;
-  font-style: normal !important;
-  letter-spacing: -0.035em;
-}
-
-/* No italic text anywhere */
-em {
-  font-style: normal !important;
-}
-
-/* Keep Pawlidays logo in its original font */
-#header .paw-brand {
-  font-family:  "Poppins", sans-serif !important;
-  font-weight: 700;
-}
-
-/* Header booking button — dark olive */
-#header .paw-nav-button {
-  background: #343C32;
-  color: #FFFFFF;
-  border-radius: 50px;
-  font-weight: 700;
-}
-font-size
-#header .paw-nav-button:hover {
-  background: #765642;
-  color: #FFFFFF;
-}
-
-/* Main actions — orange */
-#hero .paw-primary-button,
-#services .paw-services-cta,
-#pricing .buy-btn,
-#contact .php-email-form button[type="submit"] {
-  background: #E77D46;
-  color: #242922;
-  border: 1px solid #E77D46;
-  border-radius: 50px;
-  font-family:  "Poppins", sans-serif !important;
-  font-weight: 700;
-  box-shadow: none;
-  transition: all 0.25s ease;
-}
-
-#hero .paw-primary-button:hover,
-#services .paw-services-cta:hover,
-#pricing .buy-btn:hover,
-#contact .php-email-form button[type="submit"]:hover {
-  background: #343C32;
-  border-color: #343C32;
-  color: #FFFFFF;
-  transform: translateY(-2px);
-}
-
-/* =====================================
-   PAWLIDAYS — LIGHT PRICING
-   ===================================== */
-
-#pricing.paw-pricing {
-  background: #F7F4ED;
-  padding: 95px 0;
-}
-
-#pricing .section-title h2 {
-  color: #343C32;
-  font-size: clamp(32px, 4vw, 48px);
-}
-
-#pricing .section-title p {
-  color: #594F46;
-  max-width: 570px;
-  margin: 0 auto;
-}
-
-#pricing .pricing-item,
-#pricing .featured .pricing-item {
-  background: #FFFFFF;
-  color: #343C32;
-  padding: 34px;
-  border: 1px solid #E7E2D9;
-  border-radius: 20px;
-  box-shadow: none;
-  transform: none;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-#pricing .pricing-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(52, 60, 50, 0.07);
-}
-
-#pricing .paw-price-label {
-  color: #765642;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.6px;
-  margin-bottom: 20px;
-}
-
-#pricing .pricing-item h3 {
-  color: #343C32;
-  font-size: 23px;
-  line-height: 1.3;
-  margin-bottom: 18px;
-}
-
-#pricing .pricing-item p {
-  color: #594F46;
-  line-height: 1.75;
-}
-
-#pricing .pricing-item ul {
-  padding: 15px 0 20px;
-  margin: 0;
-  color: #343C32;
-}
-
-#pricing .pricing-item ul li {
-  color: #343C32;
-  font-size: 18px;
-  padding: 8px 0;
-}
-
-#pricing .pricing-item ul i {
-  color: #765642;
-  font-size: 19px;
-  margin-right: 8px;
-}
-
-#pricing .paw-price-bottom {
-  margin-top: auto;
-  padding-top: 24px;
-  border-top: 1px solid #E7E2D9;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 16px;
-}
-
-#pricing .paw-price-bottom > span {
-  font-size: 18px;
-  color: #765642;
-  font-weight: 600;
-}
-
-#pricing .buy-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 13px 23px;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-@media (max-width: 767px) {
-  #pricing.paw-pricing {
-    padding: 65px 0;
-  }
-}
-
-/* =====================================
-   PAWLIDAYS — FAQ CONTRAST FIX
-   ===================================== */
-
-#faq.faq {
-  background: #FFFFFF;
-  padding: 90px 0;
-}
-
-#faq .section-title h2 {
-  color: #343C32;
-}
-
-#faq .faq-container .faq-item {
-  background: #F7F4ED;
-  border: 1px solid #E5DED3;
-  border-radius: 14px;
-  margin-bottom: 12px;
-  padding: 24px 28px;
-  transition: background 0.25s ease,
-              border-color 0.25s ease;
-}
-
-#faq .faq-container .faq-item h3 {
-  color: #343C32;
-  font-size: 21px;
-  font-weight: 700;
-}
-
-#faq .faq-container .faq-item .faq-content p {
-  color: #594F46;
-  font-size: 21px;
-  line-height: 1.8;
-}
-
-#faq .faq-container .faq-item.faq-active {
-  background: #FFF2E9;
-  border-color: #E77D46;
-}
-
-#faq .faq-container .faq-item.faq-active h3 {
-  color: #343C32;
-}
-
-#faq .faq-container .faq-item .faq-toggle,
-#faq .faq-container .faq-active .faq-toggle {
-  color: #765642;
-}
-
-@media (max-width: 767px) {
-  #faq.faq {
-    padding: 65px 0;
-  }
-}
-
-/* PAWLIDAYS — EDITORIAL ABOUT LAYOUT */
-
-#inside-pawlidays {
-  position: relative;
-  background: #F7F4ED;
-}
-
-#inside-pawlidays .paw-about-anchor {
-  position: absolute;
-  top: -90px;
-}
-
-/* Three clean editorial columns, no cards */
-#inside-pawlidays .paw-inside-value {
-  background: transparent;
-  border-radius: 0;
-  border-top: 1px solid #C9C7BB;
-  padding: 28px 5px;
-  box-shadow: none;
-  transition: none;
-}
-
-#inside-pawlidays .paw-inside-value:hover {
-  transform: none;
-}
-
-/* Icons */
-#inside-pawlidays .paw-inside-value > i {
-  color: #C45124;
-  font-size: 25px;
-}
-
-/* Headings */
-#inside-pawlidays .paw-inside-value h4 {
-  font-family:  "Poppins", sans-serif !important;
-  font-weight: 700;
-  font-style: normal;
-  color: #343C32;
-}
-
-/* Main heading */
-#inside-pawlidays h2,
-#inside-pawlidays h3 {
-  font-family:  "Poppins", sans-serif !important;
-  font-style: normal;
-  color: #343C32;
-}
-
-/* Brand accent */
-#inside-pawlidays h2 em,
-#inside-pawlidays h3 em {
-  color: #C45124;
-  font-style: normal;
-}
-
-/* END OF PAWLIDAYS CSS */

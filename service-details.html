@@ -38,9 +38,9 @@
     </a>
     <nav id="navmenu" class="navmenu" aria-label="Main">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="index.html#about">Our Story</a></li>
-        <li><a href="index.html#services">Services</a></li>
+        <li><a href="service-details.html" class="active">Services</a></li>
         <li><a href="index.html#portfolio">Gallery</a></li>
         <li><a href="index.html#team">Our Team</a></li>
         <li><a href="blog.html">The Dog Journal</a></li>
@@ -54,60 +54,148 @@
 </header>
 <main class="main" id="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background">
+    <!-- Photo hero -->
+    <section class="sv-hero">
+      <img src="assets/img/dogs_together5.jpg" alt="Dogs playing together at Pawlidays" width="1400" height="934" fetchpriority="high">
       <div class="container">
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Our Services</li>
-          </ol>
-        </nav>
-        <h1>Our Services</h1>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li class="current">Our Services</li></ol></nav>
+        <h1>Care that fits your dog, and your day</h1>
+        <p>Clear prices, clear inclusions, no surprises. See what each service includes and how the cost adds up.</p>
+        <div class="paw-hero-actions"><a class="paw-primary-button" href="#estimator">Estimate my cost</a><a class="sv-hero-link" href="#how">How pricing works</a></div>
       </div>
-    </div><!-- End Page Title -->
+    </section>
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
+    <div class="sv-tabs"><div class="container"><nav aria-label="Page sections"><a href="#how">How pricing works</a><a href="#daycare">Daycare</a><a href="#boarding">Boarding</a><a href="#grooming">Grooming</a><a href="#walking">Dog walking</a><a href="#estimator">Cost estimator</a></nav></div></div>
+
+    <!-- How pricing works -->
+    <section id="how" class="section">
       <div class="container">
-        <div class="row gy-5">
-          <div class="col-lg-4">
-            <div class="service-box"><h4>Our services</h4><div class="services-list"><a href="#daycare" class="active"><i class="bi bi-arrow-right-circle"></i><span>Daycare</span></a><a href="#boarding"><i class="bi bi-arrow-right-circle"></i><span>Boarding</span></a><a href="#grooming"><i class="bi bi-arrow-right-circle"></i><span>Grooming</span></a><a href="#walking"><i class="bi bi-arrow-right-circle"></i><span>Dog walking</span></a></div></div>
-            <div class="help-box d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-chat-heart help-icon"></i><h4>Have a question?</h4>
-              <p class="mt-2 mb-3 text-center">Tell us about your dog and we’ll help you find the right care.</p>
-              <a class="paw-primary-button" href="index.html#contact">Get in touch</a>
-            </div>
-          </div>
-          <div class="col-lg-8 ps-lg-5">
-          <div id="daycare" class="sd-block">
-            <img src="assets/img/dogs_together.jpg" alt="Daycare at Pawlidays" loading="lazy" width="1400" height="934">
-            <h3>Play, explore, repeat</h3><p>Fun-filled day visits with room for play, social time and well-deserved rest in a calm, welcoming space.</p>
-            <ul><li><i class="bi bi-check-circle"></i> <span>Play and enrichment activities</span></li><li><i class="bi bi-check-circle"></i> <span>Quiet time to rest and recharge</span></li><li><i class="bi bi-check-circle"></i> <span>Care tailored to your dog’s routine</span></li></ul>
-          </div>
-          <div id="boarding" class="sd-block">
-            <img src="assets/img/dog_sleeping.jpg" alt="Boarding at Pawlidays" loading="lazy" width="1400" height="934">
-            <h3>A home away from home</h3><p>Comfortable overnight stays with familiar routines and plenty of attention, because time away should feel good for dogs too.</p>
-            <ul><li><i class="bi bi-check-circle"></i> <span>Cosy overnight care</span></li><li><i class="bi bi-check-circle"></i> <span>Feeding and rest on your dog’s schedule</span></li><li><i class="bi bi-check-circle"></i> <span>Daily attention and cuddles</span></li></ul>
-          </div>
-          <div id="grooming" class="sd-block">
-            <img src="assets/img/grooming.jpg" alt="Grooming at Pawlidays" loading="lazy" width="1400" height="934">
-            <h3>Fresh looks, happy tails</h3><p>Gentle grooming, refreshing baths and a little extra pampering to help your dog look and feel their best.</p>
-            <ul><li><i class="bi bi-check-circle"></i> <span>Baths and brushing</span></li><li><i class="bi bi-check-circle"></i> <span>Gentle handling, never rushed</span></li><li><i class="bi bi-check-circle"></i> <span>Coat care suited to your breed</span></li></ul>
-          </div>
-          <div id="walking" class="sd-block">
-            <img src="assets/img/walking1.jpg" alt="Dog walking at Pawlidays" loading="lazy" width="1400" height="934">
-            <h3>Every walk’s an adventure</h3><p>Fresh air, new scents and enjoyable walks adapted to your dog’s energy, pace and routine.</p>
-            <ul><li><i class="bi bi-check-circle"></i> <span>Walks matched to your dog’s energy</span></li><li><i class="bi bi-check-circle"></i> <span>Flexible timings</span></li><li><i class="bi bi-check-circle"></i> <span>Safe, relaxed routes</span></li></ul>
-          </div>
-          </div>
+        <div class="section-title"><h2>How your price is <span class="hl">calculated</span></h2><p>Four simple things decide the price, and you can see all of them before you book.</p></div>
+        <div class="sv-steps"><div class="sv-step"><i class="bi bi-grid"></i><span class="sv-stepn">01</span><h3>Pick a service</h3><p>Each service lists exactly what’s included, so you know what you’re paying for.</p></div><div class="sv-step"><i class="bi bi-rulers"></i><span class="sv-stepn">02</span><h3>Choose your dog’s size</h3><p>Prices depend on size: S, M or L. Bigger dogs need more space, time and handling.</p></div><div class="sv-step"><i class="bi bi-calendar-check"></i><span class="sv-stepn">03</span><h3>Book more, pay less</h3><p>Multi-day packages and longer stays come with automatic discounts.</p></div><div class="sv-step"><i class="bi bi-plus-circle"></i><span class="sv-stepn">04</span><h3>Add extras if you like</h3><p>Pick-up & drop-off is optional. No hidden fees, ever.</p></div></div>
+        <div class="sv-sizes" role="list" aria-label="Dog sizes">
+          <div role="listitem"><b>S</b> Small <span>up to 10 kg</span></div>
+          <div role="listitem"><b>M</b> Medium <span>10 to 25 kg</span></div>
+          <div role="listitem"><b>L</b> Large <span>over 25 kg</span></div>
         </div>
       </div>
-    </section><!-- /Service Details Section -->
+    </section>
 
+    <!-- Services -->
+    <section id="services-list" class="section pt-0">
+      <div class="container">
+      <article id="daycare" class="sv-card">
+        <div class="sv-media"><img src="assets/img/dogs_together.jpg" alt="Daycare at Pawlidays" loading="lazy" width="1400" height="934"></div>
+        <div class="sv-body">
+          <div class="sv-top"><span class="sv-from">from €18 <small>/ visit</small></span></div>
+          <h2>Daycare</h2><p class="sv-tag">Play, explore, repeat</p><p>A fun, supervised day with new friends, room to play and proper rest time, so your dog comes home happy and pleasantly tired.</p>
+          <div class="sv-two">
+            <div><ul class="sv-list"><li><i class="bi bi-check-circle-fill"></i><span>Supervised group play and enrichment</span></li><li><i class="bi bi-check-circle-fill"></i><span>Quiet rest time to recharge</span></li><li><i class="bi bi-check-circle-fill"></i><span>Fresh water available all day</span></li><li><i class="bi bi-check-circle-fill"></i><span>A photo update during the day</span></li></ul></div>
+            <div><ul class="sv-list know"><li><i class="bi bi-info-circle"></i><span>Half day is up to 5 hours, full day up to 10 hours</span></li><li><i class="bi bi-info-circle"></i><span>Free meet & greet before the first visit</span></li><li><i class="bi bi-info-circle"></i><span>Up-to-date vaccinations required</span></li></ul></div>
+          </div>
+          <div class="sv-prices"><h4>Prices by dog size</h4>
+          <div class="price-row" data-group="daycare" data-item="Half day" data-unit="visit" data-s="18" data-m="22" data-l="26">
+            <div class="price-name"><strong>Half day</strong><span>up to 5 hours</span></div>
+            <div class="price-chips"><div><small>S</small><b>€18</b></div><div><small>M</small><b>€22</b></div><div><small>L</small><b>€26</b></div></div>
+          </div>
+          <div class="price-row" data-group="daycare" data-item="Full day" data-unit="visit" data-s="28" data-m="34" data-l="40">
+            <div class="price-name"><strong>Full day</strong><span>up to 10 hours</span></div>
+            <div class="price-chips"><div><small>S</small><b>€28</b></div><div><small>M</small><b>€34</b></div><div><small>L</small><b>€40</b></div></div>
+          </div>
+          </div>
+          <a class="paw-primary-button" href="index.html?service=Daycare#contact">Book daycare</a>
+        </div>
+      </article>
+      <article id="boarding" class="sv-card">
+        <div class="sv-media"><img src="assets/img/dog_sleeping.jpg" alt="Boarding at Pawlidays" loading="lazy" width="1400" height="934"></div>
+        <div class="sv-body">
+          <div class="sv-top"><span class="sv-from">from €30 <small>/ night</small></span></div>
+          <h2>Boarding</h2><p class="sv-tag">A home away from home</p><p>Comfortable overnight stays that follow your dog’s own routine, with plenty of attention, cuddles and a cosy place to sleep.</p>
+          <div class="sv-two">
+            <div><ul class="sv-list"><li><i class="bi bi-check-circle-fill"></i><span>Cosy bed in a calm sleeping area</span></li><li><i class="bi bi-check-circle-fill"></i><span>Meals and walks on your dog’s schedule</span></li><li><i class="bi bi-check-circle-fill"></i><span>Daily play and cuddle time</span></li><li><i class="bi bi-check-circle-fill"></i><span>A photo update every day</span></li></ul></div>
+            <div><ul class="sv-list know"><li><i class="bi bi-info-circle"></i><span>Price is per night</span></li><li><i class="bi bi-info-circle"></i><span>Please bring your dog’s own food and a familiar blanket</span></li><li><i class="bi bi-info-circle"></i><span>Medication can be given on request</span></li></ul></div>
+          </div>
+          <div class="sv-prices"><h4>Prices by dog size</h4>
+          <div class="price-row" data-group="boarding" data-item="Overnight stay" data-unit="night" data-s="30" data-m="35" data-l="42">
+            <div class="price-name"><strong>Overnight stay</strong><span>per night</span></div>
+            <div class="price-chips"><div><small>S</small><b>€30</b></div><div><small>M</small><b>€35</b></div><div><small>L</small><b>€42</b></div></div>
+          </div>
+          </div>
+          <a class="paw-primary-button" href="index.html?service=Boarding#contact">Book boarding</a>
+        </div>
+      </article>
+      <article id="grooming" class="sv-card">
+        <div class="sv-media"><img src="assets/img/grooming1.jpg" alt="Grooming at Pawlidays" loading="lazy" width="1400" height="934"></div>
+        <div class="sv-body">
+          <div class="sv-top"><span class="sv-from">from €25 <small>/ session</small></span></div>
+          <h2>Grooming</h2><p class="sv-tag">Fresh looks, happy tails</p><p>Gentle, unhurried grooming that keeps the coat healthy and your dog relaxed, from a quick refresh to a full groom.</p>
+          <div class="sv-two">
+            <div><ul class="sv-list"><li><i class="bi bi-check-circle-fill"></i><span>Bath with gentle shampoo</span></li><li><i class="bi bi-check-circle-fill"></i><span>Blow-dry and brush-out</span></li><li><i class="bi bi-check-circle-fill"></i><span>Nail trim and ear check</span></li><li><i class="bi bi-check-circle-fill"></i><span>Full groom adds a trim and styling</span></li></ul></div>
+            <div><ul class="sv-list know"><li><i class="bi bi-info-circle"></i><span>Matted or very long coats may need extra time</span></li><li><i class="bi bi-info-circle"></i><span>We never rush: nervous dogs get breaks</span></li><li><i class="bi bi-info-circle"></i><span>Final price is confirmed after a quick coat check</span></li></ul></div>
+          </div>
+          <div class="sv-prices"><h4>Prices by dog size</h4>
+          <div class="price-row" data-group="grooming" data-item="Bath & brush" data-unit="session" data-s="25" data-m="35" data-l="45">
+            <div class="price-name"><strong>Bath & brush</strong><span>per session</span></div>
+            <div class="price-chips"><div><small>S</small><b>€25</b></div><div><small>M</small><b>€35</b></div><div><small>L</small><b>€45</b></div></div>
+          </div>
+          <div class="price-row" data-group="grooming" data-item="Full groom" data-unit="session" data-s="35" data-m="50" data-l="65">
+            <div class="price-name"><strong>Full groom</strong><span>per session</span></div>
+            <div class="price-chips"><div><small>S</small><b>€35</b></div><div><small>M</small><b>€50</b></div><div><small>L</small><b>€65</b></div></div>
+          </div>
+          </div>
+          <a class="paw-primary-button" href="index.html?service=Grooming#contact">Book grooming</a>
+        </div>
+      </article>
+      <article id="walking" class="sv-card">
+        <div class="sv-media"><img src="assets/img/walking1.jpg" alt="Dog walking at Pawlidays" loading="lazy" width="1400" height="934"></div>
+        <div class="sv-body">
+          <div class="sv-top"><span class="sv-from">from €12 <small>/ walk</small></span></div>
+          <h2>Dog walking</h2><p class="sv-tag">Every walk’s an adventure</p><p>Fresh air, new smells and a walk matched to your dog’s energy and pace, with a happy report at the end.</p>
+          <div class="sv-two">
+            <div><ul class="sv-list"><li><i class="bi bi-check-circle-fill"></i><span>A walk matched to your dog’s energy</span></li><li><i class="bi bi-check-circle-fill"></i><span>Water and a paw wipe-down after</span></li><li><i class="bi bi-check-circle-fill"></i><span>A short update with a photo</span></li><li><i class="bi bi-check-circle-fill"></i><span>Safe, relaxed routes</span></li></ul></div>
+            <div><ul class="sv-list know"><li><i class="bi bi-info-circle"></i><span>Individual walks, flexible timings</span></li><li><i class="bi bi-info-circle"></i><span>Choose 30 or 60 minutes</span></li><li><i class="bi bi-info-circle"></i><span>Collected from and returned to your door</span></li></ul></div>
+          </div>
+          <div class="sv-prices"><h4>Prices by dog size</h4>
+          <div class="price-row" data-group="walking" data-item="30-minute walk" data-unit="walk" data-s="12" data-m="14" data-l="16">
+            <div class="price-name"><strong>30-minute walk</strong><span>per walk</span></div>
+            <div class="price-chips"><div><small>S</small><b>€12</b></div><div><small>M</small><b>€14</b></div><div><small>L</small><b>€16</b></div></div>
+          </div>
+          <div class="price-row" data-group="walking" data-item="60-minute walk" data-unit="walk" data-s="18" data-m="21" data-l="24">
+            <div class="price-name"><strong>60-minute walk</strong><span>per walk</span></div>
+            <div class="price-chips"><div><small>S</small><b>€18</b></div><div><small>M</small><b>€21</b></div><div><small>L</small><b>€24</b></div></div>
+          </div>
+          </div>
+          <a class="paw-primary-button" href="index.html?service=Dog%20walking#contact">Book dog walking</a>
+        </div>
+      </article>
+      </div>
+    </section>
+
+    <!-- Estimator -->
+    <section id="estimator" class="section sv-est-section">
+      <div class="container">
+        <div class="section-title"><h2>Estimate your <span class="hl">cost</span></h2><p>Choose what you need and see the price straight away.</p></div>
+        <div class="sv-est">
+          <form id="estimator-form" class="sv-form" onsubmit="return false">
+            <div class="sv-field"><label for="e-item">Service</label><select id="e-item"></select></div>
+            <div class="sv-field"><label for="e-size">Dog size</label><select id="e-size"><option value="s">S · up to 10 kg</option><option value="m" selected>M · 10 to 25 kg</option><option value="l">L · over 25 kg</option></select></div>
+            <div class="sv-field"><label for="e-qty" id="e-qty-label">How many visits?</label><input id="e-qty" type="number" min="1" max="60" value="1" inputmode="numeric"></div>
+            <label class="sv-check"><input type="checkbox" id="e-dog2"><span>I have a second dog (same size)</span></label>
+            <label class="sv-check" id="e-ride-wrap"><input type="checkbox" id="e-ride"><span>Pick-up &amp; drop-off (€10 per trip)</span></label>
+          </form>
+          <div class="sv-result" aria-live="polite"><p class="sv-result-label">Estimated total</p><p class="sv-total" id="e-total">€0</p><ul id="e-lines"></ul><p class="sv-note">Indicative estimate. The final price is confirmed when you book.</p><a class="paw-primary-button" href="index.html#contact">Request this booking</a></div>
+        </div>
+        <div class="sv-deals">
+          <div><i class="bi bi-calendar2-week"></i><h3>Daycare packages</h3><p>5 days: 10% off. 10 days: 15% off.</p></div>
+          <div><i class="bi bi-moon-stars"></i><h3>Longer stays</h3><p>7 nights or more: 10% off boarding.</p></div>
+          <div><i class="bi bi-signpost-split"></i><h3>Regular walks</h3><p>10 walks or more: 10% off.</p></div>
+          <div><i class="bi bi-balloon-heart"></i><h3>Two dogs, one home</h3><p>The second dog is 20% off.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container pb-5"><div class="paw-services-footer"><h3>Not sure what your dog needs? Tell us about them.</h3><a class="paw-services-cta" href="index.html#contact">Get in touch</a></div></div>
   </main>
-
-  <footer id="footer" class="footer dark-background">
+<footer id="footer" class="footer dark-background">
   <div class="container footer-top">
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 footer-about">
@@ -160,6 +248,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/services.js"></script>
 
 </body>
 
